@@ -1,0 +1,1383 @@
+[0m03:18:52.285884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022161235D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221648E9750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221648EA550>]}
+
+
+============================== 03:18:52.289913 | f08fbcb2-5230-421f-a093-5969d5ef66f4 ==============================
+[0m03:18:52.289913 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:18:52.290880 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init tpch_sf1_data', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:18:52.313896 [debug] [MainThread]: Starter project path: C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\.venv\Lib\site-packages\dbt\include\starter_project
+[0m03:18:52.378943 [info ] [MainThread]: 
+Your new dbt project "tpch_sf1_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m03:18:52.379914 [info ] [MainThread]: Setting up your profile.
+[0m03:18:56.955938 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:18:56.955938 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:18:56.956926 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:22:44.966002 [info ] [MainThread]: Profile tpch_sf1_data written to C:\Users\honor\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m03:22:44.969017 [debug] [MainThread]: Command `dbt init` succeeded at 03:22:44.969017 after 232.76 seconds
+[0m03:22:44.969017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022164819790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022164947E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002215DC3B9D0>]}
+[0m03:22:44.970053 [debug] [MainThread]: Flushing usage events
+[0m03:22:45.424066 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:23:36.124868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C86D60ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8A4CE450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8A4CCF50>]}
+
+
+============================== 03:23:36.127866 | cf87ac5c-100e-425c-9f14-078829490511 ==============================
+[0m03:23:36.127866 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:23:36.128853 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:23:36.144953 [info ] [MainThread]: dbt version: 1.11.0-rc4
+[0m03:23:36.145819 [info ] [MainThread]: python version: 3.11.8
+[0m03:23:36.146817 [info ] [MainThread]: python path: C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\.venv\Scripts\python.exe
+[0m03:23:36.147815 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m03:23:36.458129 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:23:36.459078 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:23:36.459078 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:23:36.504745 [info ] [MainThread]: Using profiles dir at C:\Users\honor\.dbt
+[0m03:23:36.505747 [info ] [MainThread]: Using profiles.yml file at C:\Users\honor\.dbt\profiles.yml
+[0m03:23:36.506777 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\dbt_project.yml
+[0m03:23:36.507697 [info ] [MainThread]: adapter type: snowflake
+[0m03:23:36.508677 [info ] [MainThread]: adapter version: 1.10.5
+[0m03:23:36.508677 [info ] [MainThread]: Configuration:
+[0m03:23:36.509717 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:23:36.509717 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:23:36.510661 [info ] [MainThread]: Required dependencies:
+[0m03:23:36.510661 [debug] [MainThread]: Executing "git --help"
+[0m03:23:36.545695 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:23:36.546696 [debug] [MainThread]: STDERR: "b''"
+[0m03:23:36.546696 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:23:36.548701 [info ] [MainThread]: Connection:
+[0m03:23:36.548701 [info ] [MainThread]:   account: rcndmfs-ni75341
+[0m03:23:36.549723 [info ] [MainThread]:   user: honore44
+[0m03:23:36.550714 [info ] [MainThread]:   database: TPCH_SF1_DB
+[0m03:23:36.550714 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m03:23:36.551713 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m03:23:36.551713 [info ] [MainThread]:   schema: PUBLIC
+[0m03:23:36.552742 [info ] [MainThread]:   authenticator: None
+[0m03:23:36.553714 [info ] [MainThread]:   oauth_client_id: None
+[0m03:23:36.553714 [info ] [MainThread]:   query_tag: None
+[0m03:23:36.554714 [info ] [MainThread]:   client_session_keep_alive: False
+[0m03:23:36.554714 [info ] [MainThread]:   host: None
+[0m03:23:36.555712 [info ] [MainThread]:   port: None
+[0m03:23:36.555712 [info ] [MainThread]:   proxy_host: None
+[0m03:23:36.556718 [info ] [MainThread]:   proxy_port: None
+[0m03:23:36.556718 [info ] [MainThread]:   protocol: None
+[0m03:23:36.557715 [info ] [MainThread]:   connect_retries: 1
+[0m03:23:36.557715 [info ] [MainThread]:   connect_timeout: None
+[0m03:23:36.558710 [info ] [MainThread]:   retry_on_database_errors: False
+[0m03:23:36.559712 [info ] [MainThread]:   retry_all: False
+[0m03:23:36.559712 [info ] [MainThread]:   insecure_mode: False
+[0m03:23:36.560711 [info ] [MainThread]:   reuse_connections: True
+[0m03:23:36.560711 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m03:23:36.561716 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m03:23:36.561716 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m03:23:36.745580 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m03:23:42.510878 [debug] [MainThread]: Using snowflake connection "debug"
+[0m03:23:42.511961 [debug] [MainThread]: On debug: select 1 as id
+[0m03:23:42.511961 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:23:43.732515 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.219 seconds
+[0m03:23:43.734510 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:23:43.736436 [info ] [MainThread]: [31m1 check failed:[0m
+[0m03:23:43.738414 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\dbt_project.yml> not found
+
+[0m03:23:43.740408 [debug] [MainThread]: Command `dbt debug` failed at 03:23:43.740408 after 7.70 seconds
+[0m03:23:43.741501 [debug] [MainThread]: Connection 'debug' was left open.
+[0m03:23:43.741501 [debug] [MainThread]: On debug: Close
+[0m03:23:43.926948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8BED6290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8CA49D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C8A4685D0>]}
+[0m03:23:43.927940 [debug] [MainThread]: Flushing usage events
+[0m03:23:44.392130 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:24:59.827019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9FF819890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9FFADD950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9FFA84190>]}
+
+
+============================== 03:24:59.831079 | b56e8c14-05e1-4aec-9db2-353aa2fef579 ==============================
+[0m03:24:59.831079 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:24:59.832051 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m03:24:59.853081 [info ] [MainThread]: dbt version: 1.11.0-rc4
+[0m03:24:59.854027 [info ] [MainThread]: python version: 3.11.8
+[0m03:24:59.855023 [info ] [MainThread]: python path: C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\.venv\Scripts\python.exe
+[0m03:24:59.856024 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m03:25:00.186894 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:25:00.186894 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:25:00.187895 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:25:00.233475 [info ] [MainThread]: Using profiles dir at C:\Users\honor\.dbt
+[0m03:25:00.234457 [info ] [MainThread]: Using profiles.yml file at C:\Users\honor\.dbt\profiles.yml
+[0m03:25:00.235564 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\dbt_project.yml
+[0m03:25:00.236580 [info ] [MainThread]: adapter type: snowflake
+[0m03:25:00.236580 [info ] [MainThread]: adapter version: 1.10.5
+[0m03:25:00.314037 [info ] [MainThread]: Configuration:
+[0m03:25:00.314646 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:25:00.315224 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m03:25:00.315754 [info ] [MainThread]: Required dependencies:
+[0m03:25:00.316352 [debug] [MainThread]: Executing "git --help"
+[0m03:25:00.351779 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:25:00.351779 [debug] [MainThread]: STDERR: "b''"
+[0m03:25:00.352781 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:25:00.352781 [info ] [MainThread]: Connection:
+[0m03:25:00.353784 [info ] [MainThread]:   account: rcndmfs-ni75341
+[0m03:25:00.354788 [info ] [MainThread]:   user: honore44
+[0m03:25:00.355786 [info ] [MainThread]:   database: TPCH_SF1_DB
+[0m03:25:00.355786 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m03:25:00.356780 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m03:25:00.356780 [info ] [MainThread]:   schema: PUBLIC
+[0m03:25:00.357781 [info ] [MainThread]:   authenticator: None
+[0m03:25:00.357781 [info ] [MainThread]:   oauth_client_id: None
+[0m03:25:00.358781 [info ] [MainThread]:   query_tag: None
+[0m03:25:00.359797 [info ] [MainThread]:   client_session_keep_alive: False
+[0m03:25:00.360786 [info ] [MainThread]:   host: None
+[0m03:25:00.361786 [info ] [MainThread]:   port: None
+[0m03:25:00.361786 [info ] [MainThread]:   proxy_host: None
+[0m03:25:00.362786 [info ] [MainThread]:   proxy_port: None
+[0m03:25:00.363782 [info ] [MainThread]:   protocol: None
+[0m03:25:00.363782 [info ] [MainThread]:   connect_retries: 1
+[0m03:25:00.364780 [info ] [MainThread]:   connect_timeout: None
+[0m03:25:00.364780 [info ] [MainThread]:   retry_on_database_errors: False
+[0m03:25:00.365779 [info ] [MainThread]:   retry_all: False
+[0m03:25:00.365779 [info ] [MainThread]:   insecure_mode: False
+[0m03:25:00.366780 [info ] [MainThread]:   reuse_connections: True
+[0m03:25:00.366780 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m03:25:00.366780 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m03:25:00.367779 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m03:25:00.540193 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m03:25:00.579223 [debug] [MainThread]: Using snowflake connection "debug"
+[0m03:25:00.579223 [debug] [MainThread]: On debug: select 1 as id
+[0m03:25:00.580094 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:25:01.181916 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.602 seconds
+[0m03:25:01.182956 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:25:01.183912 [info ] [MainThread]: [32mAll checks passed![0m
+[0m03:25:01.184918 [debug] [MainThread]: Command `dbt debug` succeeded at 03:25:01.184918 after 1.45 seconds
+[0m03:25:01.186981 [debug] [MainThread]: Connection 'debug' was left open.
+[0m03:25:01.186981 [debug] [MainThread]: On debug: Close
+[0m03:25:01.335498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9FFAB8390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9F8E441D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B982210910>]}
+[0m03:25:01.336497 [debug] [MainThread]: Flushing usage events
+[0m03:25:01.764507 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:43:32.485366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555E3A64D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555D44CB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555E3A6090>]}
+
+
+============================== 03:43:32.491364 | 6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e ==============================
+[0m03:43:32.491364 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:43:32.493378 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_tpch_customers', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m03:43:33.079389 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:43:33.080323 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:43:33.081326 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:43:33.317320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555E3A7A50>]}
+[0m03:43:33.364389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255603ACCD0>]}
+[0m03:43:33.366433 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m03:43:33.612062 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m03:43:33.614076 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:43:33.614076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255604AFE50>]}
+[0m03:43:36.082588 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m03:43:36.086664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002556084D110>]}
+[0m03:43:36.123102 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:43:36.127104 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:43:36.166628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025560A007D0>]}
+[0m03:43:36.167657 [info ] [MainThread]: Found 507 macros
+[0m03:43:36.168622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b2d1e05-7b95-44c5-9494-ef7dbf2a6d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555AC65590>]}
+[0m03:43:36.169668 [warn ] [MainThread]: The selection criterion 'stg_tpch_customers' does not match any enabled nodes
+[0m03:43:36.170657 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:43:36.171661 [debug] [MainThread]: Command end result
+[0m03:43:36.194616 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:43:36.196615 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:43:36.200651 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m03:43:36.201650 [debug] [MainThread]: Command `dbt run` succeeded at 03:43:36.200651 after 3.79 seconds
+[0m03:43:36.201650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555E4189D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255603F5810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002556089A910>]}
+[0m03:43:36.202672 [debug] [MainThread]: Flushing usage events
+[0m03:43:36.790066 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:44:41.756948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7133598D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7135C7110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7135C41D0>]}
+
+
+============================== 03:44:41.761951 | 0f0d23fb-ef9a-453c-878d-724e11a9a621 ==============================
+[0m03:44:41.761951 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:44:41.762953 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select staging', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m03:44:42.331005 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:44:42.332004 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:44:42.333004 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:44:42.568056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f0d23fb-ef9a-453c-878d-724e11a9a621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7126EBD10>]}
+[0m03:44:42.637587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f0d23fb-ef9a-453c-878d-724e11a9a621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7155CCF10>]}
+[0m03:44:42.639587 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m03:44:42.927628 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m03:44:43.029738 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:44:43.030275 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m03:44:43.031284 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:44:43.031284 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m03:44:43.038286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0f0d23fb-ef9a-453c-878d-724e11a9a621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C715653250>]}
+[0m03:44:43.107495 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:44:43.112985 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:44:43.163528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0f0d23fb-ef9a-453c-878d-724e11a9a621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C715ADF650>]}
+[0m03:44:43.164528 [info ] [MainThread]: Found 507 macros
+[0m03:44:43.166528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f0d23fb-ef9a-453c-878d-724e11a9a621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7135B54D0>]}
+[0m03:44:43.167527 [warn ] [MainThread]: The selection criterion 'staging' does not match any enabled nodes
+[0m03:44:43.170528 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:44:43.175526 [debug] [MainThread]: Command end result
+[0m03:44:43.223547 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:44:43.230053 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:44:43.238069 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m03:44:43.240075 [debug] [MainThread]: Command `dbt run` succeeded at 03:44:43.240075 after 1.58 seconds
+[0m03:44:43.241068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7135B7D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7135B4690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7135B5350>]}
+[0m03:44:43.242069 [debug] [MainThread]: Flushing usage events
+[0m03:44:44.004741 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:45:30.735225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1C96D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1CC8050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1CC8490>]}
+
+
+============================== 03:45:30.739239 | bc327428-7865-493d-a3c7-159831f939b5 ==============================
+[0m03:45:30.739239 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:45:30.741227 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'invocation_command': 'dbt run --select staging', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m03:45:31.181924 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:45:31.182932 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:45:31.182932 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:45:31.379775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bc327428-7865-493d-a3c7-159831f939b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1D04ED0>]}
+[0m03:45:31.442785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bc327428-7865-493d-a3c7-159831f939b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB3C9CAD0>]}
+[0m03:45:31.444743 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m03:45:31.724672 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m03:45:31.797736 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:45:31.798708 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m03:45:31.798708 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:45:31.799705 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m03:45:31.804827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bc327428-7865-493d-a3c7-159831f939b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB368A650>]}
+[0m03:45:31.846755 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:45:31.849777 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:45:31.876181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bc327428-7865-493d-a3c7-159831f939b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB4154610>]}
+[0m03:45:31.877184 [info ] [MainThread]: Found 507 macros
+[0m03:45:31.878186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc327428-7865-493d-a3c7-159831f939b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB4106A10>]}
+[0m03:45:31.878186 [warn ] [MainThread]: The selection criterion 'staging' does not match any enabled nodes
+[0m03:45:31.880189 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:45:31.882213 [debug] [MainThread]: Command end result
+[0m03:45:31.902760 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:45:31.904759 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:45:31.908809 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m03:45:31.910812 [debug] [MainThread]: Command `dbt run` succeeded at 03:45:31.910812 after 1.25 seconds
+[0m03:45:31.911756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1D07050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1D06F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016BB1A29B50>]}
+[0m03:45:31.912761 [debug] [MainThread]: Flushing usage events
+[0m03:45:32.444939 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:51:17.112900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7B919850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7BBBBDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7BBB8910>]}
+
+
+============================== 03:51:17.119901 | d52b2902-866e-4c2b-8d8c-095f86f787c4 ==============================
+[0m03:51:17.119901 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m03:51:17.121897 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'invocation_command': 'dbt run --select models/staging', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m03:51:17.786238 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:51:17.787238 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:51:17.788240 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:51:18.001948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd52b2902-866e-4c2b-8d8c-095f86f787c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7DD0DAD0>]}
+[0m03:51:18.065558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd52b2902-866e-4c2b-8d8c-095f86f787c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7DB89050>]}
+[0m03:51:18.068583 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m03:51:18.370883 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m03:51:18.463350 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:51:18.464872 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m03:51:18.465884 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:51:18.466886 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m03:51:18.472883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd52b2902-866e-4c2b-8d8c-095f86f787c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7DDA5690>]}
+[0m03:51:18.529880 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:51:18.533408 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:51:18.558935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd52b2902-866e-4c2b-8d8c-095f86f787c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7E09F510>]}
+[0m03:51:18.559936 [info ] [MainThread]: Found 507 macros
+[0m03:51:18.560937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd52b2902-866e-4c2b-8d8c-095f86f787c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7BB79850>]}
+[0m03:51:18.561964 [warn ] [MainThread]: The selection criterion 'models/staging' does not match any enabled nodes
+[0m03:51:18.563935 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:51:18.567941 [debug] [MainThread]: Command end result
+[0m03:51:18.600935 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m03:51:18.603932 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m03:51:18.608935 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m03:51:18.610937 [debug] [MainThread]: Command `dbt run` succeeded at 03:51:18.610937 after 1.64 seconds
+[0m03:51:18.611936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7515F290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7515ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD74F841D0>]}
+[0m03:51:18.611936 [debug] [MainThread]: Flushing usage events
+[0m03:51:19.290504 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:01:33.803465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002522FD49210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002522FA8A010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002522FD48E90>]}
+
+
+============================== 04:01:33.806479 | c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55 ==============================
+[0m04:01:33.806479 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m04:01:33.807464 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'invocation_command': 'dbt run --select stg_tpch_customers', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m04:01:34.059243 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m04:01:34.060298 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m04:01:34.060298 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m04:01:34.182065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025231C9DE50>]}
+[0m04:01:34.223555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025231CFCD50>]}
+[0m04:01:34.224513 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m04:01:34.422752 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m04:01:34.448880 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m04:01:34.449882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002522ECF20D0>]}
+[0m04:01:35.238216 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m04:01:35.245265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252321F5F10>]}
+[0m04:01:35.293646 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:01:35.295667 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:01:35.310659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025232144E10>]}
+[0m04:01:35.311658 [info ] [MainThread]: Found 4 models, 4 sources, 507 macros
+[0m04:01:35.312656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252324F22D0>]}
+[0m04:01:35.313762 [info ] [MainThread]: 
+[0m04:01:35.314653 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m04:01:35.315653 [info ] [MainThread]: 
+[0m04:01:35.316657 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m04:01:35.317652 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB'
+[0m04:01:35.374175 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB"
+[0m04:01:35.375175 [debug] [ThreadPool]: On list_TPCH_SF1_DB: show terse schemas in database TPCH_SF1_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB"} */
+[0m04:01:35.375175 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:01:36.348573 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.973 seconds
+[0m04:01:36.352622 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB_PUBLIC'
+[0m04:01:36.361619 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB_PUBLIC"
+[0m04:01:36.362621 [debug] [ThreadPool]: On list_TPCH_SF1_DB_PUBLIC: show objects in TPCH_SF1_DB.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB_PUBLIC"} */;
+[0m04:01:36.362621 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:01:37.006048 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.644 seconds
+[0m04:01:37.010049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252327343D0>]}
+[0m04:01:37.022437 [debug] [Thread-1 (]: Began running node model.tpch_sf1_data.stg_tpch_customers
+[0m04:01:37.022437 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_tpch_customers .......................... [RUN]
+[0m04:01:37.023452 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.stg_tpch_customers'
+[0m04:01:37.024461 [debug] [Thread-1 (]: Began compiling node model.tpch_sf1_data.stg_tpch_customers
+[0m04:01:37.029451 [debug] [Thread-1 (]: Writing injected SQL for node "model.tpch_sf1_data.stg_tpch_customers"
+[0m04:01:37.031446 [debug] [Thread-1 (]: Began executing node model.tpch_sf1_data.stg_tpch_customers
+[0m04:01:37.051440 [debug] [Thread-1 (]: Writing runtime sql for node "model.tpch_sf1_data.stg_tpch_customers"
+[0m04:01:37.053439 [debug] [Thread-1 (]: Using snowflake connection "model.tpch_sf1_data.stg_tpch_customers"
+[0m04:01:37.054440 [debug] [Thread-1 (]: On model.tpch_sf1_data.stg_tpch_customers: create or replace   view TPCH_SF1_DB.PUBLIC.stg_tpch_customers
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from snowflake_sample_data.tpch_sf1.customer
+),
+
+customer_renamed_casted as (
+    select
+        c_custkey::number as customer_key, 
+        c_name as customer_name,
+        c_address as address,
+        c_nationkey::number as nation_key,
+        c_phone as phone,
+        c_acctbal::number(15,2) as account_balance,
+        c_mktsegment as raw_market_segment,
+        
+        -- Standardize market segment labels
+        case 
+            when upper(c_mktsegment) like '%AUTOMOBILE%' then 'Automobile'
+            when upper(c_mktsegment) like '%MACHINERY%' then 'Machinery' 
+            when upper(c_mktsegment) like '%BUILDING%' then 'Building'
+            else initcap(c_mktsegment)
+        end as market_segment,
+        
+        -- Account balance tier for analytics
+        case 
+            when c_acctbal > 100000 then 'High Value'
+            when c_acctbal > 50000 then 'Medium Value'
+            else 'Low Value'
+        end as customer_tier
+
+    from source
+)
+
+select * from customer_renamed_casted
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.stg_tpch_customers"} */;
+[0m04:01:37.054440 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m04:01:37.987727 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.933 seconds
+[0m04:01:38.002722 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1dcf6b2-6c7d-41d5-ba60-40cf2ba45c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252325146D0>]}
+[0m04:01:38.003725 [info ] [Thread-1 (]: 1 of 1 OK created sql view model PUBLIC.stg_tpch_customers ..................... [[32mSUCCESS 1[0m in 0.98s]
+[0m04:01:38.004723 [debug] [Thread-1 (]: Finished running node model.tpch_sf1_data.stg_tpch_customers
+[0m04:01:38.008726 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:01:38.008726 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB' was left open.
+[0m04:01:38.009725 [debug] [MainThread]: On list_TPCH_SF1_DB: Close
+[0m04:01:38.126552 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB_PUBLIC' was left open.
+[0m04:01:38.127553 [debug] [MainThread]: On list_TPCH_SF1_DB_PUBLIC: Close
+[0m04:01:38.282110 [debug] [MainThread]: Connection 'model.tpch_sf1_data.stg_tpch_customers' was left open.
+[0m04:01:38.283109 [debug] [MainThread]: On model.tpch_sf1_data.stg_tpch_customers: Close
+[0m04:01:38.401508 [info ] [MainThread]: 
+[0m04:01:38.402463 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.09 seconds (3.09s).
+[0m04:01:38.404513 [debug] [MainThread]: Command end result
+[0m04:01:38.423532 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:01:38.425532 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:01:38.430461 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m04:01:38.431504 [info ] [MainThread]: 
+[0m04:01:38.432471 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:01:38.433467 [info ] [MainThread]: 
+[0m04:01:38.433467 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m04:01:38.434466 [debug] [MainThread]: Command `dbt run` succeeded at 04:01:38.434466 after 4.69 seconds
+[0m04:01:38.435463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252292EF310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252292EED10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252290141D0>]}
+[0m04:01:38.435463 [debug] [MainThread]: Flushing usage events
+[0m04:01:38.948320 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:01:58.550470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193EB96990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193EB96ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193EB96D50>]}
+
+
+============================== 04:01:58.553522 | b34ec041-a155-4447-9ea6-dea7aa795f91 ==============================
+[0m04:01:58.553522 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m04:01:58.554563 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'invocation_command': 'dbt run --select stg_tpch_orders', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m04:01:58.804304 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m04:01:58.805303 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m04:01:58.805303 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m04:01:58.928972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021940C3C6D0>]}
+[0m04:01:58.969029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193DB6F610>]}
+[0m04:01:58.969985 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m04:01:59.160156 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m04:01:59.241750 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:01:59.242752 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:01:59.242752 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:01:59.246750 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m04:01:59.267803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002194102C790>]}
+[0m04:01:59.319371 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:01:59.322332 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:01:59.336321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021940CC9990>]}
+[0m04:01:59.336321 [info ] [MainThread]: Found 4 models, 4 sources, 507 macros
+[0m04:01:59.337328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021940F6BF10>]}
+[0m04:01:59.338326 [info ] [MainThread]: 
+[0m04:01:59.339323 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m04:01:59.339323 [info ] [MainThread]: 
+[0m04:01:59.340324 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m04:01:59.341325 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB'
+[0m04:01:59.398473 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB"
+[0m04:01:59.399508 [debug] [ThreadPool]: On list_TPCH_SF1_DB: show terse schemas in database TPCH_SF1_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB"} */
+[0m04:01:59.399508 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:01:59.973580 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.573 seconds
+[0m04:01:59.979023 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB_PUBLIC'
+[0m04:01:59.988159 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB_PUBLIC"
+[0m04:01:59.988159 [debug] [ThreadPool]: On list_TPCH_SF1_DB_PUBLIC: show objects in TPCH_SF1_DB.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB_PUBLIC"} */;
+[0m04:01:59.988159 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:02:00.386587 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.398 seconds
+[0m04:02:00.389583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021940F6BF10>]}
+[0m04:02:00.395578 [debug] [Thread-1 (]: Began running node model.tpch_sf1_data.stg_tpch_orders
+[0m04:02:00.396579 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_tpch_orders ............................. [RUN]
+[0m04:02:00.398586 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.stg_tpch_orders'
+[0m04:02:00.398586 [debug] [Thread-1 (]: Began compiling node model.tpch_sf1_data.stg_tpch_orders
+[0m04:02:00.406580 [debug] [Thread-1 (]: Writing injected SQL for node "model.tpch_sf1_data.stg_tpch_orders"
+[0m04:02:00.408578 [debug] [Thread-1 (]: Began executing node model.tpch_sf1_data.stg_tpch_orders
+[0m04:02:00.431577 [debug] [Thread-1 (]: Writing runtime sql for node "model.tpch_sf1_data.stg_tpch_orders"
+[0m04:02:00.433578 [debug] [Thread-1 (]: Using snowflake connection "model.tpch_sf1_data.stg_tpch_orders"
+[0m04:02:00.434580 [debug] [Thread-1 (]: On model.tpch_sf1_data.stg_tpch_orders: create or replace   view TPCH_SF1_DB.PUBLIC.stg_tpch_orders
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from snowflake_sample_data.tpch_sf1.orders
+),
+
+orders_renamed_casted as (
+    select
+        o_orderkey::number as order_key,
+        o_custkey::number as customer_key,
+        o_orderstatus as order_status,
+        o_totalprice::number(15,2) as total_price,
+        o_orderdate::date as order_date,
+        o_orderpriority as raw_order_priority,
+        o_shippriority::number as ship_priority,
+        
+        -- Date components for easier analytics
+        year(o_orderdate) as order_year,
+        month(o_orderdate) as order_month,
+        day(o_orderdate) as order_day,
+        to_char(o_orderdate, 'YYYYMMDD')::number as order_date_key,
+        
+        -- Normalized priority (1-5 scale → High/Medium/Low)
+        case 
+            when o_orderpriority in ('1-URGENT', '2-HIGH') then 'High'
+            when o_orderpriority in ('3-MEDIUM') then 'Medium'
+            else 'Low'
+        end as order_priority
+
+    from source
+)
+
+select * from orders_renamed_casted
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.stg_tpch_orders"} */;
+[0m04:02:00.434580 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m04:02:01.071877 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.637 seconds
+[0m04:02:01.089177 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b34ec041-a155-4447-9ea6-dea7aa795f91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002194121F650>]}
+[0m04:02:01.090177 [info ] [Thread-1 (]: 1 of 1 OK created sql view model PUBLIC.stg_tpch_orders ........................ [[32mSUCCESS 1[0m in 0.69s]
+[0m04:02:01.091161 [debug] [Thread-1 (]: Finished running node model.tpch_sf1_data.stg_tpch_orders
+[0m04:02:01.093160 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:02:01.093160 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB' was left open.
+[0m04:02:01.094178 [debug] [MainThread]: On list_TPCH_SF1_DB: Close
+[0m04:02:01.208144 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB_PUBLIC' was left open.
+[0m04:02:01.209145 [debug] [MainThread]: On list_TPCH_SF1_DB_PUBLIC: Close
+[0m04:02:01.337806 [debug] [MainThread]: Connection 'model.tpch_sf1_data.stg_tpch_orders' was left open.
+[0m04:02:01.338796 [debug] [MainThread]: On model.tpch_sf1_data.stg_tpch_orders: Close
+[0m04:02:01.445304 [info ] [MainThread]: 
+[0m04:02:01.447276 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.10 seconds (2.10s).
+[0m04:02:01.450320 [debug] [MainThread]: Command end result
+[0m04:02:01.475702 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:02:01.477714 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:02:01.483764 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m04:02:01.483764 [info ] [MainThread]: 
+[0m04:02:01.484759 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:02:01.485781 [info ] [MainThread]: 
+[0m04:02:01.486765 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m04:02:01.487764 [debug] [MainThread]: Command `dbt run` succeeded at 04:02:01.486765 after 2.99 seconds
+[0m04:02:01.487764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193E850610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193EC06ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193E837790>]}
+[0m04:02:01.487764 [debug] [MainThread]: Flushing usage events
+[0m04:02:01.925354 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:02:17.374994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C47F49D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C481EDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C481E8350>]}
+
+
+============================== 04:02:17.379008 | 793c3137-4380-4dea-92e0-08b8cadf9db0 ==============================
+[0m04:02:17.379008 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m04:02:17.379990 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select stg_tpch_lineitems', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m04:02:17.633609 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m04:02:17.633609 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m04:02:17.634610 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m04:02:17.765807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C47184310>]}
+[0m04:02:17.807806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C4A1BC990>]}
+[0m04:02:17.809817 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m04:02:18.022524 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m04:02:18.110045 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:02:18.111043 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:02:18.111043 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:02:18.116059 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m04:02:18.136606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C4A64C510>]}
+[0m04:02:18.190613 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:02:18.192679 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:02:18.207607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C4A7E6DD0>]}
+[0m04:02:18.208608 [info ] [MainThread]: Found 4 models, 4 sources, 507 macros
+[0m04:02:18.209613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C4A264490>]}
+[0m04:02:18.211617 [info ] [MainThread]: 
+[0m04:02:18.212614 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m04:02:18.212614 [info ] [MainThread]: 
+[0m04:02:18.213614 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m04:02:18.214615 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB'
+[0m04:02:18.267136 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB"
+[0m04:02:18.268137 [debug] [ThreadPool]: On list_TPCH_SF1_DB: show terse schemas in database TPCH_SF1_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB"} */
+[0m04:02:18.268137 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:02:18.821698 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.553 seconds
+[0m04:02:18.826274 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB_PUBLIC'
+[0m04:02:18.835362 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB_PUBLIC"
+[0m04:02:18.836283 [debug] [ThreadPool]: On list_TPCH_SF1_DB_PUBLIC: show objects in TPCH_SF1_DB.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB_PUBLIC"} */;
+[0m04:02:18.836283 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:02:19.302603 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.466 seconds
+[0m04:02:19.304606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C4A3D4AD0>]}
+[0m04:02:19.310605 [debug] [Thread-1 (]: Began running node model.tpch_sf1_data.stg_tpch_lineitems
+[0m04:02:19.311616 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_tpch_lineitems .......................... [RUN]
+[0m04:02:19.312611 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.stg_tpch_lineitems'
+[0m04:02:19.312611 [debug] [Thread-1 (]: Began compiling node model.tpch_sf1_data.stg_tpch_lineitems
+[0m04:02:19.319613 [debug] [Thread-1 (]: Writing injected SQL for node "model.tpch_sf1_data.stg_tpch_lineitems"
+[0m04:02:19.321618 [debug] [Thread-1 (]: Began executing node model.tpch_sf1_data.stg_tpch_lineitems
+[0m04:02:19.342141 [debug] [Thread-1 (]: Writing runtime sql for node "model.tpch_sf1_data.stg_tpch_lineitems"
+[0m04:02:19.344140 [debug] [Thread-1 (]: Using snowflake connection "model.tpch_sf1_data.stg_tpch_lineitems"
+[0m04:02:19.344140 [debug] [Thread-1 (]: On model.tpch_sf1_data.stg_tpch_lineitems: create or replace   view TPCH_SF1_DB.PUBLIC.stg_tpch_lineitems
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from snowflake_sample_data.tpch_sf1.lineitem
+),
+
+lineitems_renamed_casted as (
+    select
+        l_orderkey::number as order_key,
+        l_partkey::number as part_key,
+        l_linenumber::number as line_number,
+        l_quantity::number(3,0) as quantity,
+        l_extendedprice::number(15,2) as extended_price,
+        l_discount::number(3,2) as discount,
+        l_tax::number(3,2) as tax,
+        l_returnflag as return_flag,
+        l_linestatus as line_status,
+        l_shipdate::date as ship_date,
+        l_commitdate::date as commit_date,
+        l_receiptdate::date as receipt_date,
+        
+        -- Pre-calculate common monetary metrics (reusable in fact table)
+        l_extendedprice * (1 - l_discount) as discounted_price,
+        l_extendedprice * (1 - l_discount) * (1 + l_tax) as final_price,
+        
+        -- Simple flags for analytics
+        case when l_shipdate is not null then true else false end as is_shipped
+
+    from source
+)
+
+select * from lineitems_renamed_casted
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.stg_tpch_lineitems"} */;
+[0m04:02:19.345138 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m04:02:19.932836 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.588 seconds
+[0m04:02:19.948572 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '793c3137-4380-4dea-92e0-08b8cadf9db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C450A4E10>]}
+[0m04:02:19.948572 [info ] [Thread-1 (]: 1 of 1 OK created sql view model PUBLIC.stg_tpch_lineitems ..................... [[32mSUCCESS 1[0m in 0.64s]
+[0m04:02:19.949469 [debug] [Thread-1 (]: Finished running node model.tpch_sf1_data.stg_tpch_lineitems
+[0m04:02:19.951472 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:02:19.951472 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB' was left open.
+[0m04:02:19.952468 [debug] [MainThread]: On list_TPCH_SF1_DB: Close
+[0m04:02:20.091998 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB_PUBLIC' was left open.
+[0m04:02:20.091998 [debug] [MainThread]: On list_TPCH_SF1_DB_PUBLIC: Close
+[0m04:02:20.212610 [debug] [MainThread]: Connection 'model.tpch_sf1_data.stg_tpch_lineitems' was left open.
+[0m04:02:20.212610 [debug] [MainThread]: On model.tpch_sf1_data.stg_tpch_lineitems: Close
+[0m04:02:20.326319 [info ] [MainThread]: 
+[0m04:02:20.327311 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.11 seconds (2.11s).
+[0m04:02:20.328349 [debug] [MainThread]: Command end result
+[0m04:02:20.354120 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:02:20.357148 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:02:20.363163 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m04:02:20.363163 [info ] [MainThread]: 
+[0m04:02:20.364118 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:02:20.365118 [info ] [MainThread]: 
+[0m04:02:20.366129 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m04:02:20.367119 [debug] [MainThread]: Command `dbt run` succeeded at 04:02:20.367119 after 3.06 seconds
+[0m04:02:20.367119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C47E5B790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C4A2C8110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C416FF310>]}
+[0m04:02:20.368125 [debug] [MainThread]: Flushing usage events
+[0m04:02:20.812116 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:02:34.038844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027995226A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027995226D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027995226CD0>]}
+
+
+============================== 04:02:34.041865 | 111e237a-6e64-44de-aa84-e503071ec901 ==============================
+[0m04:02:34.041865 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m04:02:34.043844 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_tpch_parts', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m04:02:34.298629 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m04:02:34.299228 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m04:02:34.299785 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m04:02:34.429334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002799529B0D0>]}
+[0m04:02:34.470189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027994207790>]}
+[0m04:02:34.471186 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m04:02:34.672733 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m04:02:34.758296 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:02:34.758296 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:02:34.759296 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:02:34.763304 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m04:02:34.785409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279968A52D0>]}
+[0m04:02:34.838404 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:02:34.840428 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:02:34.855800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279978567D0>]}
+[0m04:02:34.856801 [info ] [MainThread]: Found 4 models, 4 sources, 507 macros
+[0m04:02:34.856801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027997644510>]}
+[0m04:02:34.858801 [info ] [MainThread]: 
+[0m04:02:34.858801 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m04:02:34.859800 [info ] [MainThread]: 
+[0m04:02:34.859800 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m04:02:34.861819 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB'
+[0m04:02:34.918318 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB"
+[0m04:02:34.918318 [debug] [ThreadPool]: On list_TPCH_SF1_DB: show terse schemas in database TPCH_SF1_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB"} */
+[0m04:02:34.919318 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:02:35.448083 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.529 seconds
+[0m04:02:35.453139 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB_PUBLIC'
+[0m04:02:35.461127 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB_PUBLIC"
+[0m04:02:35.462148 [debug] [ThreadPool]: On list_TPCH_SF1_DB_PUBLIC: show objects in TPCH_SF1_DB.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB_PUBLIC"} */;
+[0m04:02:35.462148 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:02:35.911421 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.449 seconds
+[0m04:02:35.915054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027997C40210>]}
+[0m04:02:35.921055 [debug] [Thread-1 (]: Began running node model.tpch_sf1_data.stg_tpch_parts
+[0m04:02:35.921055 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_tpch_parts .............................. [RUN]
+[0m04:02:35.923055 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.stg_tpch_parts'
+[0m04:02:35.923055 [debug] [Thread-1 (]: Began compiling node model.tpch_sf1_data.stg_tpch_parts
+[0m04:02:35.931048 [debug] [Thread-1 (]: Writing injected SQL for node "model.tpch_sf1_data.stg_tpch_parts"
+[0m04:02:35.933047 [debug] [Thread-1 (]: Began executing node model.tpch_sf1_data.stg_tpch_parts
+[0m04:02:35.955015 [debug] [Thread-1 (]: Writing runtime sql for node "model.tpch_sf1_data.stg_tpch_parts"
+[0m04:02:35.957028 [debug] [Thread-1 (]: Using snowflake connection "model.tpch_sf1_data.stg_tpch_parts"
+[0m04:02:35.958062 [debug] [Thread-1 (]: On model.tpch_sf1_data.stg_tpch_parts: create or replace   view TPCH_SF1_DB.PUBLIC.stg_tpch_parts
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from snowflake_sample_data.tpch_sf1.part
+),
+
+part_renamed_casted as (
+    select
+        p_partkey::number as part_key,
+        p_name as part_name,
+        p_mfgr as manufacturer,
+        p_brand as brand,
+        p_type as raw_part_type,
+        p_size::number as part_size,
+        p_retailprice::number(10,2) as retail_price,
+        p_container as container,
+        
+        -- Extract category from part type (simplified)
+        case 
+            when p_type like '%STANDARD%' then 'Standard'
+            when p_type like '%LARGE%' then 'Large'
+            when p_type like '%MEDIUM%' then 'Medium'
+            when p_type like '%SMALL%' then 'Small'
+            else 'Other'
+        end as product_category,
+        
+        -- Price tier
+        case 
+            when p_retailprice > 1000 then 'Premium'
+            when p_retailprice > 500 then 'Mid-range'
+            else 'Economy'
+        end as price_tier
+
+    from source
+)
+
+select * from part_renamed_casted
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.stg_tpch_parts"} */;
+[0m04:02:35.959347 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m04:02:36.506989 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.548 seconds
+[0m04:02:36.522966 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '111e237a-6e64-44de-aa84-e503071ec901', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027997918F50>]}
+[0m04:02:36.523949 [info ] [Thread-1 (]: 1 of 1 OK created sql view model PUBLIC.stg_tpch_parts ......................... [[32mSUCCESS 1[0m in 0.60s]
+[0m04:02:36.524968 [debug] [Thread-1 (]: Finished running node model.tpch_sf1_data.stg_tpch_parts
+[0m04:02:36.526950 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:02:36.527953 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB' was left open.
+[0m04:02:36.528953 [debug] [MainThread]: On list_TPCH_SF1_DB: Close
+[0m04:02:36.645165 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB_PUBLIC' was left open.
+[0m04:02:36.646159 [debug] [MainThread]: On list_TPCH_SF1_DB_PUBLIC: Close
+[0m04:02:36.764595 [debug] [MainThread]: Connection 'model.tpch_sf1_data.stg_tpch_parts' was left open.
+[0m04:02:36.765627 [debug] [MainThread]: On model.tpch_sf1_data.stg_tpch_parts: Close
+[0m04:02:36.872031 [info ] [MainThread]: 
+[0m04:02:36.873039 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.01 seconds (2.01s).
+[0m04:02:36.874050 [debug] [MainThread]: Command end result
+[0m04:02:36.894060 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:02:36.896999 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:02:36.902008 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m04:02:36.902008 [info ] [MainThread]: 
+[0m04:02:36.903009 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:02:36.904017 [info ] [MainThread]: 
+[0m04:02:36.904017 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m04:02:36.905014 [debug] [MainThread]: Command `dbt run` succeeded at 04:02:36.905014 after 2.93 seconds
+[0m04:02:36.906011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027994EE0610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002798E83ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002798E83F290>]}
+[0m04:02:36.906011 [debug] [MainThread]: Flushing usage events
+[0m04:02:37.338614 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:13:35.370511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECEFC19850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECEFEDEAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECEFEDD490>]}
+
+
+============================== 04:13:35.374574 | c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5 ==============================
+[0m04:13:35.374574 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m04:13:35.375500 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select path:tpch_sf1_data/models/marts', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m04:13:35.654064 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m04:13:35.655063 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m04:13:35.656066 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m04:13:35.802585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECEFF0AA10>]}
+[0m04:13:35.850100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECEEE4E8D0>]}
+[0m04:13:35.851100 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m04:13:36.093215 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m04:13:36.184805 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m04:13:36.185812 [debug] [MainThread]: Partial parsing: added file: tpch_sf1_data://tpch_sf1_data/models\marts\dim_customer.sql
+[0m04:13:36.185812 [debug] [MainThread]: Partial parsing: added file: tpch_sf1_data://tpch_sf1_data/models\marts\fct_orders.sql
+[0m04:13:36.186792 [debug] [MainThread]: Partial parsing: added file: tpch_sf1_data://tpch_sf1_data/models\marts\dim_product.sql
+[0m04:13:36.368951 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m04:13:36.380058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECECD64AD0>]}
+[0m04:13:36.433485 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:13:36.436380 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:13:36.454383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECF25B1690>]}
+[0m04:13:36.455381 [info ] [MainThread]: Found 7 models, 4 sources, 507 macros
+[0m04:13:36.456382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECEE926050>]}
+[0m04:13:36.458478 [info ] [MainThread]: 
+[0m04:13:36.459381 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m04:13:36.459381 [info ] [MainThread]: 
+[0m04:13:36.460383 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m04:13:36.464381 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB'
+[0m04:13:36.522894 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB"
+[0m04:13:36.522894 [debug] [ThreadPool]: On list_TPCH_SF1_DB: show terse schemas in database TPCH_SF1_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB"} */
+[0m04:13:36.523894 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:13:37.296079 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.773 seconds
+[0m04:13:37.299207 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB_PUBLIC'
+[0m04:13:37.309275 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB_PUBLIC"
+[0m04:13:37.310271 [debug] [ThreadPool]: On list_TPCH_SF1_DB_PUBLIC: show objects in TPCH_SF1_DB.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB_PUBLIC"} */;
+[0m04:13:37.310271 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:13:37.786478 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.476 seconds
+[0m04:13:37.788482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECF2092490>]}
+[0m04:13:37.794479 [debug] [Thread-1 (]: Began running node model.tpch_sf1_data.dim_customer
+[0m04:13:37.795481 [debug] [Thread-2 (]: Began running node model.tpch_sf1_data.dim_product
+[0m04:13:37.795481 [debug] [Thread-3 (]: Began running node model.tpch_sf1_data.fct_orders
+[0m04:13:37.796480 [info ] [Thread-1 (]: 1 of 3 START sql view model PUBLIC.dim_customer ................................ [RUN]
+[0m04:13:37.796480 [info ] [Thread-2 (]: 2 of 3 START sql view model PUBLIC.dim_product ................................. [RUN]
+[0m04:13:37.797498 [info ] [Thread-3 (]: 3 of 3 START sql view model PUBLIC.fct_orders .................................. [RUN]
+[0m04:13:37.798481 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.dim_customer'
+[0m04:13:37.798481 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.dim_product'
+[0m04:13:37.799488 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.tpch_sf1_data.fct_orders'
+[0m04:13:37.800527 [debug] [Thread-1 (]: Began compiling node model.tpch_sf1_data.dim_customer
+[0m04:13:37.800527 [debug] [Thread-2 (]: Began compiling node model.tpch_sf1_data.dim_product
+[0m04:13:37.801536 [debug] [Thread-3 (]: Began compiling node model.tpch_sf1_data.fct_orders
+[0m04:13:37.807528 [debug] [Thread-1 (]: Writing injected SQL for node "model.tpch_sf1_data.dim_customer"
+[0m04:13:37.810523 [debug] [Thread-2 (]: Writing injected SQL for node "model.tpch_sf1_data.dim_product"
+[0m04:13:37.814000 [debug] [Thread-3 (]: Writing injected SQL for node "model.tpch_sf1_data.fct_orders"
+[0m04:13:37.817040 [debug] [Thread-1 (]: Began executing node model.tpch_sf1_data.dim_customer
+[0m04:13:37.841008 [debug] [Thread-1 (]: Writing runtime sql for node "model.tpch_sf1_data.dim_customer"
+[0m04:13:37.842009 [debug] [Thread-2 (]: Began executing node model.tpch_sf1_data.dim_product
+[0m04:13:37.843008 [debug] [Thread-3 (]: Began executing node model.tpch_sf1_data.fct_orders
+[0m04:13:37.846060 [debug] [Thread-2 (]: Writing runtime sql for node "model.tpch_sf1_data.dim_product"
+[0m04:13:37.850064 [debug] [Thread-3 (]: Writing runtime sql for node "model.tpch_sf1_data.fct_orders"
+[0m04:13:37.852009 [debug] [Thread-1 (]: Using snowflake connection "model.tpch_sf1_data.dim_customer"
+[0m04:13:37.853363 [debug] [Thread-1 (]: On model.tpch_sf1_data.dim_customer: create or replace   view TPCH_SF1_DB.PUBLIC.dim_customer
+  
+  
+  
+  
+  as (
+    with customers as (
+    select * from TPCH_SF1_DB.PUBLIC.stg_tpch_customers
+)
+
+select
+    customer_key,
+    customer_name,
+    address,
+    nation_key,
+    phone,
+    account_balance,
+    market_segment,
+    customer_tier  -- Use your enhanced staging field!
+from customers
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.dim_customer"} */;
+[0m04:13:37.855406 [debug] [Thread-3 (]: Using snowflake connection "model.tpch_sf1_data.fct_orders"
+[0m04:13:37.856371 [debug] [Thread-2 (]: Using snowflake connection "model.tpch_sf1_data.dim_product"
+[0m04:13:37.857403 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m04:13:37.858375 [debug] [Thread-3 (]: On model.tpch_sf1_data.fct_orders: create or replace   view TPCH_SF1_DB.PUBLIC.fct_orders
+  
+  
+  
+  
+  as (
+    with orders as (
+    select * from TPCH_SF1_DB.PUBLIC.stg_tpch_orders
+),
+lineitems as (
+    select * from TPCH_SF1_DB.PUBLIC.stg_tpch_lineitems
+),
+order_summary as (
+    select
+        order_key,
+        count(*) as line_item_count,
+        sum(quantity) as total_quantity,
+        sum(discounted_price) as total_discounted_sales,  -- Use staging pre-calc!
+        sum(final_price) as total_final_sales             -- Use staging pre-calc!
+    from lineitems
+    group by order_key
+)
+
+select
+    orders.order_key,
+    orders.customer_key,
+    orders.order_date,
+    orders.order_year,
+    orders.order_month,
+    orders.order_status,
+    orders.order_priority,
+    orders.total_price as order_total,
+    order_summary.line_item_count,
+    order_summary.total_quantity,
+    order_summary.total_discounted_sales,
+    order_summary.total_final_sales
+from orders
+left join order_summary using (order_key)
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.fct_orders"} */;
+[0m04:13:37.859371 [debug] [Thread-2 (]: On model.tpch_sf1_data.dim_product: create or replace   view TPCH_SF1_DB.PUBLIC.dim_product
+  
+  
+  
+  
+  as (
+    with parts as (
+    select * from TPCH_SF1_DB.PUBLIC.stg_tpch_parts
+)
+
+select
+    part_key as product_key,
+    part_name as product_name,
+    manufacturer,
+    brand,
+    product_category,  -- Use your enhanced staging field!
+    price_tier,        -- Use your enhanced staging field!
+    retail_price
+from parts
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "model.tpch_sf1_data.dim_product"} */;
+[0m04:13:37.860372 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:13:37.861372 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m04:13:38.513468 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.651 seconds
+[0m04:13:38.538108 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECF207BAD0>]}
+[0m04:13:38.539056 [info ] [Thread-2 (]: 2 of 3 OK created sql view model PUBLIC.dim_product ............................ [[32mSUCCESS 1[0m in 0.74s]
+[0m04:13:38.540055 [debug] [Thread-2 (]: Finished running node model.tpch_sf1_data.dim_product
+[0m04:13:38.569099 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.712 seconds
+[0m04:13:38.572102 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECF2E09F90>]}
+[0m04:13:38.573093 [info ] [Thread-1 (]: 1 of 3 OK created sql view model PUBLIC.dim_customer ........................... [[32mSUCCESS 1[0m in 0.77s]
+[0m04:13:38.576099 [debug] [Thread-1 (]: Finished running node model.tpch_sf1_data.dim_customer
+[0m04:13:38.634234 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.774 seconds
+[0m04:13:38.636230 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c024cdd3-f007-4f50-bcfe-1f32a4ebb4e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECF2DF6F10>]}
+[0m04:13:38.637230 [info ] [Thread-3 (]: 3 of 3 OK created sql view model PUBLIC.fct_orders ............................. [[32mSUCCESS 1[0m in 0.84s]
+[0m04:13:38.638242 [debug] [Thread-3 (]: Finished running node model.tpch_sf1_data.fct_orders
+[0m04:13:38.641241 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:13:38.642233 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB' was left open.
+[0m04:13:38.642233 [debug] [MainThread]: On list_TPCH_SF1_DB: Close
+[0m04:13:38.747748 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB_PUBLIC' was left open.
+[0m04:13:38.748746 [debug] [MainThread]: On list_TPCH_SF1_DB_PUBLIC: Close
+[0m04:13:38.868418 [debug] [MainThread]: Connection 'model.tpch_sf1_data.dim_customer' was left open.
+[0m04:13:38.869431 [debug] [MainThread]: On model.tpch_sf1_data.dim_customer: Close
+[0m04:13:39.014571 [debug] [MainThread]: Connection 'model.tpch_sf1_data.dim_product' was left open.
+[0m04:13:39.016194 [debug] [MainThread]: On model.tpch_sf1_data.dim_product: Close
+[0m04:13:39.130163 [debug] [MainThread]: Connection 'model.tpch_sf1_data.fct_orders' was left open.
+[0m04:13:39.130163 [debug] [MainThread]: On model.tpch_sf1_data.fct_orders: Close
+[0m04:13:39.257914 [info ] [MainThread]: 
+[0m04:13:39.259917 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 2.80 seconds (2.80s).
+[0m04:13:39.261918 [debug] [MainThread]: Command end result
+[0m04:13:39.292910 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:13:39.295910 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:13:39.301916 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m04:13:39.301916 [info ] [MainThread]: 
+[0m04:13:39.302915 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:13:39.303919 [info ] [MainThread]: 
+[0m04:13:39.304916 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m04:13:39.305916 [debug] [MainThread]: Command `dbt run` succeeded at 04:13:39.305916 after 4.00 seconds
+[0m04:13:39.306918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECE9174450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECE944ED10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECE916BF10>]}
+[0m04:13:39.307932 [debug] [MainThread]: Flushing usage events
+[0m04:13:39.913411 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:19:30.181063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C44B49890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C44DE8990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C44DE8110>]}
+
+
+============================== 04:19:30.186305 | aedb3d85-3a55-4e8a-92ae-a8e667e8c14d ==============================
+[0m04:19:30.186305 [info ] [MainThread]: Running with dbt=1.11.0-rc4
+[0m04:19:30.188303 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\honor\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\honor\\OneDrive\\Bureau\\Data_Engineering\\dbt\\TPCH_SF1\\logs'}
+[0m04:19:30.534977 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m04:19:30.535978 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m04:19:30.535978 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m04:19:30.721613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C44DE8710>]}
+[0m04:19:30.779688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C46DBCF90>]}
+[0m04:19:30.781963 [info ] [MainThread]: Registered adapter: snowflake=1.10.5
+[0m04:19:31.065083 [debug] [MainThread]: checksum: 842928f8ae4493609b718c3a2ba37eba4d3f0741660a6d80eafff9cc4b61decb, vars: {}, profile: , target: , version: 1.11.0rc4
+[0m04:19:31.189303 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m04:19:31.189303 [debug] [MainThread]: Partial parsing: added file: tpch_sf1_data://tpch_sf1_data/models\marts\schema.yml
+[0m04:19:31.357644 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'dim_customer' in
+package 'tpch_sf1_data' (tpch_sf1_data/models\marts\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m04:19:31.358317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C46EBBAD0>]}
+[0m04:19:31.457708 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tpch_sf1_data.example
+[0m04:19:31.470711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C474283D0>]}
+[0m04:19:31.558589 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:19:31.562588 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:19:31.593627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C477A3E50>]}
+[0m04:19:31.594598 [info ] [MainThread]: Found 7 models, 8 data tests, 4 sources, 507 macros
+[0m04:19:31.595590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C475F3390>]}
+[0m04:19:31.598608 [info ] [MainThread]: 
+[0m04:19:31.600605 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m04:19:31.606598 [info ] [MainThread]: 
+[0m04:19:31.607601 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m04:19:31.709638 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_TPCH_SF1_DB_PUBLIC'
+[0m04:19:31.804328 [debug] [ThreadPool]: Using snowflake connection "list_TPCH_SF1_DB_PUBLIC"
+[0m04:19:31.805377 [debug] [ThreadPool]: On list_TPCH_SF1_DB_PUBLIC: show objects in TPCH_SF1_DB.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "connection_name": "list_TPCH_SF1_DB_PUBLIC"} */;
+[0m04:19:31.805377 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:19:33.162955 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.358 seconds
+[0m04:19:33.169948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aedb3d85-3a55-4e8a-92ae-a8e667e8c14d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C47790390>]}
+[0m04:19:33.181710 [debug] [Thread-1 (]: Began running node test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3
+[0m04:19:33.182701 [debug] [Thread-2 (]: Began running node test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f
+[0m04:19:33.182701 [debug] [Thread-3 (]: Began running node test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef
+[0m04:19:33.183710 [debug] [Thread-4 (]: Began running node test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15
+[0m04:19:33.184704 [debug] [Thread-5 (]: Began running node test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30
+[0m04:19:33.185703 [debug] [Thread-6 (]: Began running node test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a
+[0m04:19:33.186734 [debug] [Thread-7 (]: Began running node test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e
+[0m04:19:33.186734 [debug] [Thread-8 (]: Began running node test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273
+[0m04:19:33.185703 [info ] [Thread-1 (]: 1 of 8 START test accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery  [RUN]
+[0m04:19:33.187734 [info ] [Thread-2 (]: 2 of 8 START test not_null_dim_customer_customer_key ........................... [RUN]
+[0m04:19:33.198340 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f'
+[0m04:19:33.200341 [debug] [Thread-2 (]: Began compiling node test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f
+[0m04:19:33.187734 [info ] [Thread-3 (]: 3 of 8 START test not_null_fct_orders_customer_key ............................. [RUN]
+[0m04:19:33.192928 [info ] [Thread-8 (]: 8 of 8 START test unique_fct_orders_order_key .................................. [RUN]
+[0m04:19:33.197342 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3'
+[0m04:19:33.189184 [info ] [Thread-4 (]: 4 of 8 START test not_null_fct_orders_order_key ................................ [RUN]
+[0m04:19:33.190613 [info ] [Thread-6 (]: 6 of 8 START test relationships_fct_orders_customer_key__customer_key__ref_dim_customer_  [RUN]
+[0m04:19:33.217868 [debug] [Thread-2 (]: Writing injected SQL for node "test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f"
+[0m04:19:33.191622 [info ] [Thread-7 (]: 7 of 8 START test unique_dim_customer_customer_key ............................. [RUN]
+[0m04:19:33.218504 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef'
+[0m04:19:33.189184 [info ] [Thread-5 (]: 5 of 8 START test not_null_fct_orders_total_final_sales ........................ [RUN]
+[0m04:19:33.219724 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273'
+[0m04:19:33.220794 [debug] [Thread-1 (]: Began compiling node test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3
+[0m04:19:33.221795 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15'
+[0m04:19:33.224792 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a'
+[0m04:19:33.226802 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e'
+[0m04:19:33.226802 [debug] [Thread-2 (]: Began executing node test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f
+[0m04:19:33.227968 [debug] [Thread-3 (]: Began compiling node test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef
+[0m04:19:33.229027 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30'
+[0m04:19:33.267870 [debug] [Thread-5 (]: Began compiling node test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30
+[0m04:19:33.237808 [debug] [Thread-1 (]: Writing injected SQL for node "test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3"
+[0m04:19:33.238820 [debug] [Thread-4 (]: Began compiling node test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15
+[0m04:19:33.239822 [debug] [Thread-6 (]: Began compiling node test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a
+[0m04:19:33.241326 [debug] [Thread-7 (]: Began compiling node test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e
+[0m04:19:33.266867 [debug] [Thread-3 (]: Writing injected SQL for node "test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef"
+[0m04:19:33.229027 [debug] [Thread-8 (]: Began compiling node test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273
+[0m04:19:33.281736 [debug] [Thread-2 (]: Writing runtime sql for node "test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f"
+[0m04:19:33.287733 [debug] [Thread-5 (]: Writing injected SQL for node "test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30"
+[0m04:19:33.294827 [debug] [Thread-4 (]: Writing injected SQL for node "test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15"
+[0m04:19:33.302836 [debug] [Thread-6 (]: Writing injected SQL for node "test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a"
+[0m04:19:33.302836 [debug] [Thread-1 (]: Began executing node test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3
+[0m04:19:33.314670 [debug] [Thread-7 (]: Writing injected SQL for node "test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e"
+[0m04:19:33.408650 [debug] [Thread-8 (]: Writing injected SQL for node "test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273"
+[0m04:19:33.410650 [debug] [Thread-3 (]: Began executing node test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef
+[0m04:19:33.412650 [debug] [Thread-2 (]: Using snowflake connection "test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f"
+[0m04:19:33.414157 [debug] [Thread-5 (]: Began executing node test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30
+[0m04:19:33.414157 [debug] [Thread-4 (]: Began executing node test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15
+[0m04:19:33.418835 [debug] [Thread-1 (]: Writing runtime sql for node "test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3"
+[0m04:19:33.419845 [debug] [Thread-6 (]: Began executing node test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a
+[0m04:19:33.420845 [debug] [Thread-7 (]: Began executing node test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e
+[0m04:19:33.425363 [debug] [Thread-3 (]: Writing runtime sql for node "test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef"
+[0m04:19:33.425363 [debug] [Thread-2 (]: On test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from TPCH_SF1_DB.PUBLIC.dim_customer
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f"} */
+[0m04:19:33.426364 [debug] [Thread-8 (]: Began executing node test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273
+[0m04:19:33.430364 [debug] [Thread-5 (]: Writing runtime sql for node "test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30"
+[0m04:19:33.435364 [debug] [Thread-4 (]: Writing runtime sql for node "test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15"
+[0m04:19:33.439367 [debug] [Thread-6 (]: Writing runtime sql for node "test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a"
+[0m04:19:33.441368 [debug] [Thread-1 (]: Using snowflake connection "test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3"
+[0m04:19:33.444366 [debug] [Thread-7 (]: Writing runtime sql for node "test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e"
+[0m04:19:33.445380 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m04:19:33.447362 [debug] [Thread-3 (]: Using snowflake connection "test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef"
+[0m04:19:33.450360 [debug] [Thread-8 (]: Writing runtime sql for node "test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273"
+[0m04:19:33.451879 [debug] [Thread-5 (]: Using snowflake connection "test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30"
+[0m04:19:33.452890 [debug] [Thread-1 (]: On test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        market_segment as value_field,
+        count(*) as n_records
+
+    from TPCH_SF1_DB.PUBLIC.dim_customer
+    group by market_segment
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Automobile','Building','Furniture','Household','Machinery'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3"} */
+[0m04:19:33.454460 [debug] [Thread-4 (]: Using snowflake connection "test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15"
+[0m04:19:33.455499 [debug] [Thread-6 (]: Using snowflake connection "test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a"
+[0m04:19:33.457508 [debug] [Thread-7 (]: Using snowflake connection "test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e"
+[0m04:19:33.459509 [debug] [Thread-3 (]: On test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from TPCH_SF1_DB.PUBLIC.fct_orders
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef"} */
+[0m04:19:33.461511 [debug] [Thread-5 (]: On test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_final_sales
+from TPCH_SF1_DB.PUBLIC.fct_orders
+where total_final_sales is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30"} */
+[0m04:19:33.462510 [debug] [Thread-8 (]: Using snowflake connection "test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273"
+[0m04:19:33.463507 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m04:19:33.464509 [debug] [Thread-4 (]: On test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_key
+from TPCH_SF1_DB.PUBLIC.fct_orders
+where order_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15"} */
+[0m04:19:33.465649 [debug] [Thread-6 (]: On test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_key as from_field
+    from TPCH_SF1_DB.PUBLIC.fct_orders
+    where customer_key is not null
+),
+
+parent as (
+    select customer_key as to_field
+    from TPCH_SF1_DB.PUBLIC.dim_customer
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a"} */
+[0m04:19:33.466657 [debug] [Thread-7 (]: On test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_key as unique_field,
+    count(*) as n_records
+
+from TPCH_SF1_DB.PUBLIC.dim_customer
+where customer_key is not null
+group by customer_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e"} */
+[0m04:19:33.466657 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:19:33.468089 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m04:19:33.469183 [debug] [Thread-8 (]: On test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_key as unique_field,
+    count(*) as n_records
+
+from TPCH_SF1_DB.PUBLIC.fct_orders
+where order_key is not null
+group by order_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.0rc4", "profile_name": "tpch_sf1_data", "target_name": "dev", "node_id": "test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273"} */
+[0m04:19:33.471192 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m04:19:33.472198 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m04:19:33.473193 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m04:19:33.477459 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m04:19:34.808938 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.342 seconds
+[0m04:19:34.822636 [info ] [Thread-3 (]: 3 of 8 PASS not_null_fct_orders_customer_key ................................... [[32mPASS[0m in 1.60s]
+[0m04:19:34.824637 [debug] [Thread-3 (]: Finished running node test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef
+[0m04:19:34.845634 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.375 seconds
+[0m04:19:34.848634 [info ] [Thread-4 (]: 4 of 8 PASS not_null_fct_orders_order_key ...................................... [[32mPASS[0m in 1.63s]
+[0m04:19:34.849633 [debug] [Thread-4 (]: Finished running node test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15
+[0m04:19:34.910928 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.465 seconds
+[0m04:19:34.912923 [info ] [Thread-2 (]: 2 of 8 PASS not_null_dim_customer_customer_key ................................. [[32mPASS[0m in 1.71s]
+[0m04:19:34.915354 [debug] [Thread-2 (]: Finished running node test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f
+[0m04:19:34.968750 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.505 seconds
+[0m04:19:34.973744 [info ] [Thread-1 (]: 1 of 8 PASS accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery  [[32mPASS[0m in 1.78s]
+[0m04:19:34.976745 [debug] [Thread-1 (]: Finished running node test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3
+[0m04:19:35.017917 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 1.545 seconds
+[0m04:19:35.023918 [info ] [Thread-7 (]: 7 of 8 PASS unique_dim_customer_customer_key ................................... [[32mPASS[0m in 1.80s]
+[0m04:19:35.025919 [debug] [Thread-7 (]: Finished running node test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e
+[0m04:19:35.129616 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.658 seconds
+[0m04:19:35.134610 [info ] [Thread-6 (]: 6 of 8 PASS relationships_fct_orders_customer_key__customer_key__ref_dim_customer_  [[32mPASS[0m in 1.91s]
+[0m04:19:35.136611 [debug] [Thread-6 (]: Finished running node test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a
+[0m04:19:35.634868 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.166 seconds
+[0m04:19:35.637873 [info ] [Thread-5 (]: 5 of 8 PASS not_null_fct_orders_total_final_sales .............................. [[32mPASS[0m in 2.41s]
+[0m04:19:35.638873 [debug] [Thread-5 (]: Finished running node test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30
+[0m04:19:35.919779 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 2.442 seconds
+[0m04:19:35.923925 [info ] [Thread-8 (]: 8 of 8 PASS unique_fct_orders_order_key ........................................ [[32mPASS[0m in 2.70s]
+[0m04:19:35.925795 [debug] [Thread-8 (]: Finished running node test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273
+[0m04:19:35.930796 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:19:35.932801 [debug] [MainThread]: Connection 'list_TPCH_SF1_DB_PUBLIC' was left open.
+[0m04:19:35.933802 [debug] [MainThread]: On list_TPCH_SF1_DB_PUBLIC: Close
+[0m04:19:36.095368 [debug] [MainThread]: Connection 'test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3' was left open.
+[0m04:19:36.096368 [debug] [MainThread]: On test.tpch_sf1_data.accepted_values_dim_customer_market_segment__Automobile__Building__Furniture__Household__Machinery.0e474734f3: Close
+[0m04:19:36.234676 [debug] [MainThread]: Connection 'test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f' was left open.
+[0m04:19:36.235671 [debug] [MainThread]: On test.tpch_sf1_data.not_null_dim_customer_customer_key.c289fe4d1f: Close
+[0m04:19:36.361413 [debug] [MainThread]: Connection 'test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef' was left open.
+[0m04:19:36.362429 [debug] [MainThread]: On test.tpch_sf1_data.not_null_fct_orders_customer_key.af098eeeef: Close
+[0m04:19:36.485415 [debug] [MainThread]: Connection 'test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273' was left open.
+[0m04:19:36.485960 [debug] [MainThread]: On test.tpch_sf1_data.unique_fct_orders_order_key.f5e7a90273: Close
+[0m04:19:36.624936 [debug] [MainThread]: Connection 'test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15' was left open.
+[0m04:19:36.625936 [debug] [MainThread]: On test.tpch_sf1_data.not_null_fct_orders_order_key.6a6f83ab15: Close
+[0m04:19:36.762507 [debug] [MainThread]: Connection 'test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a' was left open.
+[0m04:19:36.763508 [debug] [MainThread]: On test.tpch_sf1_data.relationships_fct_orders_customer_key__customer_key__ref_dim_customer_.75922e1b1a: Close
+[0m04:19:36.898888 [debug] [MainThread]: Connection 'test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e' was left open.
+[0m04:19:36.900068 [debug] [MainThread]: On test.tpch_sf1_data.unique_dim_customer_customer_key.7b0683cc6e: Close
+[0m04:19:37.027948 [debug] [MainThread]: Connection 'test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30' was left open.
+[0m04:19:37.028955 [debug] [MainThread]: On test.tpch_sf1_data.not_null_fct_orders_total_final_sales.58cbe5eb30: Close
+[0m04:19:37.184544 [info ] [MainThread]: 
+[0m04:19:37.185552 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 5.58 seconds (5.58s).
+[0m04:19:37.188545 [debug] [MainThread]: Command end result
+[0m04:19:37.224363 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\manifest.json
+[0m04:19:37.228926 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\semantic_manifest.json
+[0m04:19:37.240260 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\honor\OneDrive\Bureau\Data_Engineering\dbt\TPCH_SF1\target\run_results.json
+[0m04:19:37.241261 [info ] [MainThread]: 
+[0m04:19:37.242263 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:19:37.243262 [info ] [MainThread]: 
+[0m04:19:37.244262 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=8
+[0m04:19:37.245261 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m04:19:37.248027 [debug] [MainThread]: Command `dbt test` succeeded at 04:19:37.248027 after 7.17 seconds
+[0m04:19:37.249042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C44DA3FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C3E38F2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C3E0B4250>]}
+[0m04:19:37.249042 [debug] [MainThread]: Flushing usage events
+[0m04:19:37.852018 [debug] [MainThread]: An error was encountered while trying to flush usage events

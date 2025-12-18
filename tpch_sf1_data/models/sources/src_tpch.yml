@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: tpch # This is the logical name you give to the source.
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+      - name: orders
+      - name: lineitem
+      - name: part
