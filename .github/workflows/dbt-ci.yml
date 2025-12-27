@@ -1,0 +1,44 @@
+name: dbt CI (Test Only)
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dbt-snowflake
+      run: pip install dbt-snowflake==1.10.5
+    
+    - name: dbt deps
+      env:
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+        SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
+        SNOWFLAKE_ROLE_DEV: ${{ secrets.SNOWFLAKE_ROLE_DEV }}
+        SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
+        SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
+        SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
+      run: |
+        echo "profiles_ci.yml" > profiles.yml
+        dbt deps --profiles-dir . --target dev
+    
+    - name: dbt test
+      env:
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+        SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
+        SNOWFLAKE_ROLE_DEV: ${{ secrets.SNOWFLAKE_ROLE_DEV }}
+        SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
+        SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
+        SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
+      run: dbt test --profiles-dir . --target dev
