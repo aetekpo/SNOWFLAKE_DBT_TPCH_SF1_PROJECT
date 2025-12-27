@@ -1,0 +1,23 @@
+tpch_sf1_data:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "rcndmfs-ni75341"
+      user: "DBT_SERVICE_USER"
+      role: "DBT_DEV_ROLE"
+      database: "TPCH_DEV_DB" 
+      warehouse: "COMPUTE_WH"
+      schema: "DBT_DEV_SCHEMA" 
+      authenticator:
+      private_key_path: "C:\\Users\\honor\\.snowflake_key.pem"
+    prod:
+      type: snowflake
+      account: "rcndmfs-ni75341"
+      user: "DBT_SERVICE_USER"
+      role: "DBT_DEV_ROLE"
+      database: "TPCH_PROD_DB"
+      warehouse: "COMPUTE_WH"
+      schema: "TPCH_PROD_SCHEMA"
+      authenticator:
+      private_key_path: "C:\\Users\\honor\\.snowflake_key.pem"

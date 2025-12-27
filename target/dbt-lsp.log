@@ -1,0 +1,1040 @@
+==================== 2025-12-24T08:16:50.547802Z | d390205c-2ed7-4a72-82de-b1163a9e2354 ====================
+08:16:50.551886 [info ]: Starting dbt LSP server
+08:16:50.553495 [info ]: Connecting to LSP client on port 8000
+08:16:50.556332 [info ]: Successfully connected to LSP client
+08:16:50.556378 [info ]: Creating LSP service...
+08:16:50.640240 [info ]: Creating LSP server...
+08:16:50.640259 [info ]: Starting LSP server...
+08:16:50.709652 [info ]: Started loading project
+08:16:51.099659 [info ]: Started parsing
+08:16:51.172385 [info ]: Finished loading project [  0.46s]
+08:16:51.351754 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+08:16:51.357537 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+08:16:51.396638 [info ]: Finished parsing [  0.30s]
+08:16:51.399730 [info ]: Cached model count updated: 7 models (estimate)
+08:16:51.399751 [info ]: Cached model count updated: 7 models (accurate)
+08:16:51.401488 [info ]: Started scheduling
+08:16:51.405361 [info ]: Finished scheduling [  0.00s]
+08:16:53.029973 [debug]: Query executed on node unknown:
+describe table "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."CUSTOMER"
+08:16:53.251151 [debug]: Query executed on node unknown:
+describe table "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."LINEITEM"
+08:16:53.368833 [debug]: Query executed on node unknown:
+describe table "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."PART"
+08:16:53.380658 [debug]: Query executed on node unknown:
+describe table "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."ORDERS"
+08:16:54.370542 [info ]: Started building task graph
+08:16:54.374373 [info ]: Finished building task graph [  0.00s]
+08:16:54.383822 [info ]: Started rendering (7 nodes)
+08:16:54.384944 [info ]: Started model PUBLIC.stg_tpch_orders
+08:16:54.385799 [debug]: Started rendering model PUBLIC.stg_tpch_orders
+08:16:54.385841 [info ]: Started model PUBLIC.stg_tpch_lineitems
+08:16:54.385851 [debug]: Started rendering model PUBLIC.stg_tpch_lineitems
+08:16:54.385862 [info ]: Started model PUBLIC.stg_tpch_parts
+08:16:54.385867 [debug]: Started rendering model PUBLIC.stg_tpch_parts
+08:16:54.385876 [info ]: Started model PUBLIC.stg_tpch_customers
+08:16:54.385883 [debug]: Started rendering model PUBLIC.stg_tpch_customers
+08:16:54.400982 [debug]: Finished rendering [  0.02s] model PUBLIC.stg_tpch_lineitems [success]
+08:16:54.401239 [info ]: Started analyzing (7 nodes)
+08:16:54.401261 [debug]: Started analyzing model PUBLIC.stg_tpch_lineitems
+08:16:54.401295 [debug]: Finished rendering [  0.02s] model PUBLIC.stg_tpch_orders [success]
+08:16:54.401310 [debug]: Started analyzing model PUBLIC.stg_tpch_orders
+08:16:54.401327 [debug]: Finished rendering [  0.02s] model PUBLIC.stg_tpch_customers [success]
+08:16:54.401338 [debug]: Started analyzing model PUBLIC.stg_tpch_customers
+08:16:54.401352 [debug]: Finished rendering [  0.02s] model PUBLIC.stg_tpch_parts [success]
+08:16:54.401362 [debug]: Started analyzing model PUBLIC.stg_tpch_parts
+08:16:54.548360 [info ]:  Succeeded [  0.16s] model PUBLIC.stg_tpch_lineitems (view)
+08:16:54.548592 [debug]: Finished analyzing [  0.15s] model PUBLIC.stg_tpch_lineitems [success]
+08:16:54.548622 [info ]:  Succeeded [  0.16s] model PUBLIC.stg_tpch_parts (view)
+08:16:54.548633 [debug]: Finished analyzing [  0.15s] model PUBLIC.stg_tpch_parts [success]
+08:16:54.548830 [info ]: Started model PUBLIC.dim_product
+08:16:54.548845 [debug]: Started rendering model PUBLIC.dim_product
+08:16:54.551268 [debug]: Finished rendering [  0.00s] model PUBLIC.dim_product [success]
+08:16:54.551284 [debug]: Started analyzing model PUBLIC.dim_product
+08:16:54.556341 [info ]:  Succeeded [  0.01s] model PUBLIC.dim_product (view)
+08:16:54.556403 [debug]: Finished analyzing [  0.01s] model PUBLIC.dim_product [success]
+08:16:54.561882 [info ]:  Succeeded [  0.17s] model PUBLIC.stg_tpch_customers (view)
+08:16:54.562003 [debug]: Finished analyzing [  0.16s] model PUBLIC.stg_tpch_customers [success]
+08:16:54.562064 [info ]: Started model PUBLIC.dim_customer
+08:16:54.562084 [debug]: Started rendering model PUBLIC.dim_customer
+08:16:54.565164 [debug]: Finished rendering [  0.00s] model PUBLIC.dim_customer [success]
+08:16:54.565177 [debug]: Started analyzing model PUBLIC.dim_customer
+08:16:54.568430 [info ]:  Succeeded [  0.01s] model PUBLIC.dim_customer (view)
+08:16:54.568472 [debug]: Finished analyzing [  0.00s] model PUBLIC.dim_customer [success]
+08:16:54.587642 [info ]:  Succeeded [  0.20s] model PUBLIC.stg_tpch_orders (view)
+08:16:54.587676 [debug]: Finished analyzing [  0.19s] model PUBLIC.stg_tpch_orders [success]
+08:16:54.587705 [info ]: Started model PUBLIC.fct_orders
+08:16:54.587717 [debug]: Started rendering model PUBLIC.fct_orders
+08:16:54.589671 [debug]: Finished rendering [  0.00s] model PUBLIC.fct_orders [success]
+08:16:54.589698 [info ]: Finished rendering [  0.21s] (7 nodes, 0 skipped, 0 errors)
+08:16:54.589722 [debug]: Started analyzing model PUBLIC.fct_orders
+08:16:54.622669 [info ]:  Succeeded [  0.03s] model PUBLIC.fct_orders (view)
+08:16:54.622704 [debug]: Finished analyzing [  0.03s] model PUBLIC.fct_orders [success]
+08:16:54.622711 [info ]: Finished analyzing [  0.22s] (7 nodes, 0 skipped, 0 errors)
+08:16:54.635153 [info ]: Cached model count updated: 7 models (accurate)
+08:30:08.675756 [info ]: Started loading project
+08:30:08.705280 [info ]: Finished loading project [  0.03s]
+08:30:09.852084 [info ]: Started loading project
+08:30:09.853079 [info ]: Finished loading project [  0.00s]
+08:35:32.188333 [info ]: Started loading project
+08:35:32.206883 [info ]: Finished loading project [  0.02s]
+08:35:32.450146 [info ]: Started loading project
+08:35:32.452909 [info ]: Finished loading project [  0.00s]
+08:35:33.703549 [info ]: Started loading project
+08:35:33.704660 [info ]: Finished loading project [  0.00s]
+09:07:45.578100 [info ]: Started loading project
+09:07:45.613945 [info ]: Finished loading project [  0.04s]
+09:07:45.917278 [info ]: Started loading project
+09:07:45.931387 [info ]: Finished loading project [  0.01s]
+09:07:47.235834 [info ]: Started loading project
+09:07:47.238112 [info ]: Finished loading project [  0.00s]
+09:10:24.040859 [info ]: Started loading project
+09:10:24.105036 [info ]: Finished loading project [  0.06s]
+09:10:24.456347 [info ]: Started loading project
+09:10:24.461075 [info ]: Finished loading project [  0.00s]
+09:10:27.316729 [info ]: Started loading project
+09:10:27.320366 [info ]: Finished loading project [  0.00s]
+09:42:58.900913 [info ]: Started loading project
+09:42:58.947294 [info ]: Started loading project
+09:42:58.948420 [info ]: Finished loading project [  0.05s]
+09:42:59.776867 [info ]: Finished loading project [  0.83s]
+09:42:59.803570 [info ]: Started loading project
+09:42:59.810279 [info ]: Started loading project
+09:42:59.810942 [info ]: Finished loading project [  0.01s]
+09:42:59.988880 [info ]: Started parsing
+09:43:00.043828 [info ]: Finished loading project [  0.23s]
+09:43:00.243168 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+09:43:00.249916 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+09:43:00.289274 [info ]: Finished parsing [  0.30s]
+09:43:00.289949 [info ]: Cached model count updated: 7 models (estimate)
+09:43:00.289967 [info ]: Cached model count updated: 7 models (accurate)
+09:43:00.290002 [info ]: Started scheduling
+09:43:00.290134 [info ]: Finished scheduling [  0.00s]
+09:43:00.451594 [info ]: Started building task graph
+09:43:00.451725 [info ]: Finished building task graph [  0.00s]
+09:43:00.451866 [info ]: Started rendering (7 nodes)
+09:43:00.451886 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+09:43:00.451900 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+09:43:00.451924 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+09:43:00.451929 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+09:43:00.451943 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+09:43:00.451948 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+09:43:00.451955 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+09:43:00.451959 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+09:43:00.458566 [info ]: Started analyzing (7 nodes)
+09:43:00.458596 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+09:43:00.458935 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+09:43:00.471911 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+09:43:00.472722 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+09:43:00.480497 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+09:43:00.491271 [debug]: Finished rendering [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+09:43:00.491339 [debug]: Finished rendering [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+09:43:00.491358 [debug]: Finished rendering [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+09:43:00.510582 [info ]:  Succeeded [  0.06s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+09:43:00.510628 [debug]: Finished analyzing [  0.05s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+09:43:00.510658 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+09:43:00.510680 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+09:43:00.515948 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+09:43:00.516168 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.dim_product [success]
+09:43:00.550376 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.dim_product (view)
+09:43:00.550424 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.dim_product [success]
+09:43:00.553849 [info ]:  Succeeded [  0.10s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+09:43:00.553897 [debug]: Finished analyzing [  0.07s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+09:43:00.558302 [info ]:  Succeeded [  0.10s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+09:43:00.558353 [debug]: Finished analyzing [  0.09s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+09:43:00.558386 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+09:43:00.558406 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+09:43:00.562945 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+09:43:00.563001 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+09:43:00.570668 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+09:43:00.570715 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.dim_customer [success]
+09:43:00.596794 [info ]:  Succeeded [  0.14s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+09:43:00.596840 [debug]: Finished analyzing [  0.12s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+09:43:00.596871 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+09:43:00.596891 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+09:43:00.599762 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+09:43:00.599796 [info ]: Finished rendering [  0.15s] (7 nodes, 0 skipped, 0 errors)
+09:43:00.599830 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+09:43:00.624257 [info ]:  Succeeded [  0.03s] model DBT_DEV_SCHEMA.fct_orders (view)
+09:43:00.624291 [debug]: Finished analyzing [  0.02s] model DBT_DEV_SCHEMA.fct_orders [success]
+09:43:00.624299 [info ]: Finished analyzing [  0.17s] (7 nodes, 0 skipped, 0 errors)
+09:43:00.626796 [info ]: Cached model count updated: 7 models (accurate)
+09:46:20.298951 [info ]: Started loading project
+09:46:20.331017 [info ]: Cached model count updated: 7 models (accurate)
+09:46:20.331103 [info ]: Finished loading project [  0.03s]
+09:54:28.673160 [info ]: Started loading project
+09:54:28.707493 [info ]: Started loading project
+09:54:28.708108 [info ]: Finished loading project [  0.03s]
+09:54:29.036634 [info ]: Finished loading project [  0.33s]
+09:54:29.059144 [info ]: Started loading project
+09:54:29.065354 [info ]: Started loading project
+09:54:29.066064 [info ]: Finished loading project [  0.01s]
+09:54:29.280300 [info ]: Started parsing
+09:54:29.326667 [info ]: Finished loading project [  0.26s]
+09:54:29.338188 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+09:54:29.341094 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+09:54:29.370434 [info ]: Finished parsing [  0.09s]
+09:54:29.371321 [info ]: Cached model count updated: 7 models (estimate)
+09:54:29.371341 [info ]: Cached model count updated: 7 models (accurate)
+09:54:29.371382 [info ]: Started scheduling
+09:54:29.371500 [info ]: Finished scheduling [  0.00s]
+09:54:29.586596 [info ]: Started building task graph
+09:54:29.586756 [info ]: Finished building task graph [  0.00s]
+09:54:29.587478 [info ]: Started rendering (7 nodes)
+09:54:29.587516 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+09:54:29.587534 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+09:54:29.587559 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+09:54:29.587567 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+09:54:29.587584 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+09:54:29.587592 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+09:54:29.587601 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+09:54:29.587608 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+09:54:29.594167 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+09:54:29.594208 [info ]: Started analyzing (7 nodes)
+09:54:29.594234 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+09:54:29.594565 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+09:54:29.594778 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+09:54:29.596282 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+09:54:29.596755 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+09:54:29.598533 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+09:54:29.598633 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+09:54:29.627436 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+09:54:29.627488 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+09:54:29.640807 [info ]:  Succeeded [  0.05s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+09:54:29.640860 [debug]: Finished analyzing [  0.05s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+09:54:29.640906 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+09:54:29.640928 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+09:54:29.645307 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+09:54:29.645794 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+09:54:29.653338 [info ]:  Succeeded [  0.06s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+09:54:29.653386 [debug]: Finished analyzing [  0.05s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+09:54:29.653419 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+09:54:29.653435 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+09:54:29.657010 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+09:54:29.657124 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+09:54:29.666901 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+09:54:29.666971 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.dim_customer [success]
+09:54:29.676606 [info ]:  Succeeded [  0.09s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+09:54:29.676660 [debug]: Finished analyzing [  0.08s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+09:54:29.676698 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+09:54:29.676718 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+09:54:29.680868 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+09:54:29.680906 [info ]: Finished rendering [  0.09s] (7 nodes, 0 skipped, 0 errors)
+09:54:29.680940 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+09:54:29.683423 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.fct_orders (view)
+09:54:29.683549 [debug]: Finished analyzing [  0.04s] model DBT_DEV_SCHEMA.fct_orders [success]
+09:54:29.684294 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+09:54:29.684339 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+09:54:29.684351 [info ]: Finished analyzing [  0.09s] (7 nodes, 0 skipped, 0 errors)
+09:54:29.689089 [info ]: Cached model count updated: 7 models (accurate)
+09:57:37.445853 [info ]: Started loading project
+09:57:37.472657 [info ]: Cached model count updated: 7 models (accurate)
+09:57:37.472733 [info ]: Finished loading project [  0.03s]
+10:07:51.945677 [info ]: Started scheduling
+10:07:51.947968 [info ]: Finished scheduling [  0.00s]
+10:08:45.040026 [info ]: Started scheduling
+10:08:45.040149 [info ]: Finished scheduling [  0.00s]
+10:11:16.082160 [info ]: Started loading project
+10:11:16.089160 [info ]: Started loading project
+10:11:16.089924 [info ]: Finished loading project [  0.01s]
+10:11:16.251260 [info ]: Started parsing
+10:11:16.278075 [info ]: Finished loading project [  0.19s]
+10:11:16.288963 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:11:16.291169 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:11:16.304886 [info ]: Finished parsing [  0.05s]
+10:11:16.305613 [info ]: Cached model count updated: 7 models (estimate)
+10:11:16.305636 [info ]: Cached model count updated: 7 models (accurate)
+10:11:16.305687 [info ]: Started scheduling
+10:11:16.305795 [info ]: Finished scheduling [  0.00s]
+10:11:16.426915 [info ]: Started building task graph
+10:11:16.427046 [info ]: Finished building task graph [  0.00s]
+10:11:16.460943 [info ]: Started loading project
+10:11:16.465156 [info ]: Started loading project
+10:11:16.465796 [info ]: Finished loading project [  0.00s]
+10:11:16.593749 [info ]: Started parsing
+10:11:16.619080 [info ]: Finished loading project [  0.15s]
+10:11:16.626869 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:11:16.628741 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:11:16.639138 [info ]: Finished parsing [  0.05s]
+10:11:16.639780 [info ]: Cached model count updated: 7 models (estimate)
+10:11:16.639795 [info ]: Cached model count updated: 7 models (accurate)
+10:11:16.639828 [info ]: Started scheduling
+10:11:16.639907 [info ]: Finished scheduling [  0.00s]
+10:11:16.760793 [info ]: Started building task graph
+10:11:16.760906 [info ]: Finished building task graph [  0.00s]
+10:11:16.796756 [info ]: Started loading project
+10:11:16.800991 [info ]: Started loading project
+10:11:16.801991 [info ]: Finished loading project [  0.01s]
+10:11:16.958916 [info ]: Started parsing
+10:11:16.992139 [info ]: Finished loading project [  0.19s]
+10:11:16.999671 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:11:17.001575 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:11:17.018264 [info ]: Finished parsing [  0.06s]
+10:11:17.018886 [info ]: Cached model count updated: 7 models (estimate)
+10:11:17.018903 [info ]: Cached model count updated: 7 models (accurate)
+10:11:17.018935 [info ]: Started scheduling
+10:11:17.019031 [info ]: Finished scheduling [  0.00s]
+10:11:17.196391 [info ]: Started building task graph
+10:11:17.196514 [info ]: Finished building task graph [  0.00s]
+10:11:17.196644 [info ]: Started rendering (7 nodes)
+10:11:17.196672 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+10:11:17.196689 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+10:11:17.196706 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:11:17.196714 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:11:17.196728 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+10:11:17.196735 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+10:11:17.196743 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+10:11:17.196748 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+10:11:17.200430 [info ]: Started analyzing (7 nodes)
+10:11:17.200460 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+10:11:17.200510 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:11:17.200970 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+10:11:17.201137 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:11:17.202405 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:11:17.202462 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+10:11:17.202500 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:11:17.202522 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:11:17.210775 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+10:11:17.210812 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:11:17.210836 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+10:11:17.210852 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+10:11:17.210920 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+10:11:17.210951 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:11:17.213916 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:11:17.213974 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+10:11:17.214574 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+10:11:17.214621 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:11:17.214652 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+10:11:17.214673 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+10:11:17.217914 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+10:11:17.217923 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:11:17.218366 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+10:11:17.218405 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:11:17.222176 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+10:11:17.222313 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:11:17.248649 [info ]:  Succeeded [  0.05s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+10:11:17.248680 [debug]: Finished analyzing [  0.05s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:11:17.248702 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+10:11:17.248711 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+10:11:17.250538 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+10:11:17.250536 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:11:17.250562 [info ]: Finished rendering [  0.05s] (7 nodes, 0 skipped, 0 errors)
+10:11:17.257491 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.fct_orders (view)
+10:11:17.257526 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:11:17.257533 [info ]: Finished analyzing [  0.06s] (7 nodes, 0 skipped, 0 errors)
+10:11:17.260085 [info ]: Cached model count updated: 7 models (accurate)
+10:14:18.033592 [info ]: Started loading project
+10:14:18.042620 [info ]: Cached model count updated: 7 models (accurate)
+10:14:18.042661 [info ]: Finished loading project [  0.01s]
+10:16:39.276467 [info ]: Started loading project
+10:16:39.277395 [info ]: Finished loading project [  0.00s]
+10:16:39.612351 [info ]: Started loading project
+10:16:39.614497 [info ]: Finished loading project [  0.00s]
+10:16:40.860047 [info ]: Started loading project
+10:16:40.861268 [info ]: Finished loading project [  0.00s]
+10:18:01.015995 [info ]: Started loading project
+10:18:01.047107 [info ]: Started loading project
+10:18:01.047575 [info ]: Finished loading project [  0.03s]
+10:18:01.200393 [info ]: Started parsing
+10:18:01.229402 [info ]: Finished loading project [  0.18s]
+10:18:01.238262 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:18:01.240941 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:18:01.254447 [info ]: Finished parsing [  0.05s]
+10:18:01.255152 [info ]: Cached model count updated: 7 models (estimate)
+10:18:01.255172 [info ]: Cached model count updated: 7 models (accurate)
+10:18:01.255214 [info ]: Started scheduling
+10:18:01.255329 [info ]: Finished scheduling [  0.00s]
+10:18:01.373622 [info ]: Started building task graph
+10:18:01.373761 [info ]: Finished building task graph [  0.00s]
+10:18:01.413110 [info ]: Started loading project
+10:18:01.419413 [info ]: Started loading project
+10:18:01.420352 [info ]: Finished loading project [  0.01s]
+10:18:01.595811 [info ]: Started parsing
+10:18:01.623738 [info ]: Finished loading project [  0.20s]
+10:18:01.632249 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:18:01.634335 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:18:01.645258 [info ]: Finished parsing [  0.05s]
+10:18:01.645948 [info ]: Cached model count updated: 7 models (estimate)
+10:18:01.645963 [info ]: Cached model count updated: 7 models (accurate)
+10:18:01.645997 [info ]: Started scheduling
+10:18:01.646083 [info ]: Finished scheduling [  0.00s]
+10:18:01.773275 [info ]: Started building task graph
+10:18:01.773395 [info ]: Finished building task graph [  0.00s]
+10:18:01.803181 [info ]: Started loading project
+10:18:01.806884 [info ]: Started loading project
+10:18:01.807388 [info ]: Finished loading project [  0.00s]
+10:18:01.937854 [info ]: Started parsing
+10:18:01.964811 [info ]: Finished loading project [  0.16s]
+10:18:01.971310 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:18:01.973389 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:18:01.985110 [info ]: Finished parsing [  0.05s]
+10:18:01.985829 [info ]: Cached model count updated: 7 models (estimate)
+10:18:01.985845 [info ]: Cached model count updated: 7 models (accurate)
+10:18:01.985877 [info ]: Started scheduling
+10:18:01.985958 [info ]: Finished scheduling [  0.00s]
+10:18:02.165524 [info ]: Started building task graph
+10:18:02.165641 [info ]: Finished building task graph [  0.00s]
+10:18:02.165775 [info ]: Started rendering (7 nodes)
+10:18:02.165796 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+10:18:02.165811 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+10:18:02.165829 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:18:02.165838 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:18:02.165851 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+10:18:02.165856 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+10:18:02.165864 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+10:18:02.165868 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+10:18:02.170526 [info ]: Started analyzing (7 nodes)
+10:18:02.170561 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+10:18:02.170642 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+10:18:02.170765 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:18:02.171784 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:18:02.172093 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:18:02.172241 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:18:02.172472 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+10:18:02.172601 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:18:02.178996 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+10:18:02.179044 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:18:02.179076 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+10:18:02.179094 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+10:18:02.181288 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+10:18:02.181332 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:18:02.181366 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+10:18:02.181382 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+10:18:02.182874 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+10:18:02.183111 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:18:02.185217 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+10:18:02.185397 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:18:02.187012 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+10:18:02.187063 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:18:02.188576 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+10:18:02.188608 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:18:02.204224 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+10:18:02.204256 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:18:02.205544 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+10:18:02.205573 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:18:02.205594 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+10:18:02.205606 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+10:18:02.207679 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:18:02.207712 [info ]: Finished rendering [  0.04s] (7 nodes, 0 skipped, 0 errors)
+10:18:02.207744 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+10:18:02.231562 [info ]:  Succeeded [  0.03s] model DBT_DEV_SCHEMA.fct_orders (view)
+10:18:02.231612 [debug]: Finished analyzing [  0.02s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:18:02.231622 [info ]: Finished analyzing [  0.06s] (7 nodes, 0 skipped, 0 errors)
+10:18:02.234192 [info ]: Cached model count updated: 7 models (accurate)
+10:21:04.190295 [info ]: Started loading project
+10:21:04.198913 [info ]: Cached model count updated: 7 models (accurate)
+10:21:04.198943 [info ]: Finished loading project [  0.01s]
+10:38:57.869715 [info ]: Started loading project
+10:38:57.870644 [info ]: Finished loading project [  0.00s]
+10:38:58.203015 [info ]: Started loading project
+10:38:58.203867 [info ]: Finished loading project [  0.00s]
+10:38:59.415616 [info ]: Started loading project
+10:38:59.416778 [info ]: Finished loading project [  0.00s]
+10:39:00.374086 [info ]: Started loading project
+10:39:00.403233 [info ]: Started loading project
+10:39:00.403681 [info ]: Finished loading project [  0.03s]
+10:39:00.589175 [info ]: Started parsing
+10:39:00.621599 [info ]: Finished loading project [  0.22s]
+10:39:00.633599 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:39:00.636302 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:39:00.655514 [info ]: Finished parsing [  0.07s]
+10:39:00.657338 [info ]: Cached model count updated: 7 models (estimate)
+10:39:00.657366 [info ]: Cached model count updated: 7 models (accurate)
+10:39:00.657419 [info ]: Started scheduling
+10:39:00.657545 [info ]: Finished scheduling [  0.00s]
+10:39:00.802630 [info ]: Started building task graph
+10:39:00.802756 [info ]: Finished building task graph [  0.00s]
+10:39:00.814725 [info ]: Started loading project
+10:39:00.818389 [info ]: Started loading project
+10:39:00.818948 [info ]: Finished loading project [  0.00s]
+10:39:01.011420 [info ]: Started parsing
+10:39:01.059855 [info ]: Finished parsing [  0.05s]
+10:39:01.060011 [info ]: Finished loading project [  0.24s]
+10:39:01.074475 [info ]: Started loading project
+10:39:01.079638 [info ]: Started loading project
+10:39:01.081859 [info ]: Finished loading project [  0.01s]
+10:39:01.290123 [info ]: Started parsing
+10:39:01.320300 [info ]: Finished loading project [  0.24s]
+10:39:01.334930 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:39:01.338468 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:39:01.355846 [info ]: Finished parsing [  0.07s]
+10:39:01.356576 [info ]: Cached model count updated: 7 models (estimate)
+10:39:01.356594 [info ]: Cached model count updated: 7 models (accurate)
+10:39:01.356628 [info ]: Started scheduling
+10:39:01.356723 [info ]: Finished scheduling [  0.00s]
+10:39:01.493565 [info ]: Started building task graph
+10:39:01.493688 [info ]: Finished building task graph [  0.00s]
+10:39:01.493828 [info ]: Started rendering (7 nodes)
+10:39:01.493849 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+10:39:01.493864 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+10:39:01.493883 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:39:01.493890 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:39:01.493903 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+10:39:01.493911 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+10:39:01.493953 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+10:39:01.493963 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+10:39:01.501094 [info ]: Started analyzing (7 nodes)
+10:39:01.501125 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:39:01.501878 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:39:01.503242 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+10:39:01.503499 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:39:01.503652 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+10:39:01.504503 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+10:39:01.504547 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:39:01.504580 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:39:01.513872 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+10:39:01.513961 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:39:01.514316 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+10:39:01.514354 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:39:01.514387 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+10:39:01.514403 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+10:39:01.517528 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+10:39:01.517706 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+10:39:01.517737 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:39:01.517762 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+10:39:01.517775 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+10:39:01.517912 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:39:01.522846 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+10:39:01.523140 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.dim_product [success]
+10:39:01.528245 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+10:39:01.528292 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.dim_product [success]
+10:39:01.533128 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+10:39:01.533178 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:39:01.533212 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+10:39:01.533233 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+10:39:01.536048 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:39:01.536054 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+10:39:01.536085 [info ]: Finished rendering [  0.04s] (7 nodes, 0 skipped, 0 errors)
+10:39:01.538545 [info ]:  Succeeded [  0.00s] model DBT_DEV_SCHEMA.dim_customer (view)
+10:39:01.538590 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:39:01.548280 [info ]:  Succeeded [  0.03s] model DBT_DEV_SCHEMA.fct_orders (view)
+10:39:01.548333 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:39:01.548344 [info ]: Finished analyzing [  0.05s] (7 nodes, 0 skipped, 0 errors)
+10:39:01.557436 [info ]: Cached model count updated: 7 models (accurate)
+10:40:23.448878 [info ]: Started scheduling
+10:40:23.449032 [info ]: Finished scheduling [  0.00s]
+10:42:00.472532 [info ]: Started loading project
+10:42:00.480032 [info ]: Finished loading project [  0.01s]
+10:42:00.480046 [info ]: Cached model count updated: 7 models (accurate)
+10:54:08.620967 [info ]: Started loading project
+10:54:08.646106 [info ]: Started loading project
+10:54:08.646703 [info ]: Finished loading project [  0.03s]
+10:54:08.813031 [info ]: Started parsing
+10:54:08.841941 [info ]: Finished loading project [  0.20s]
+10:54:08.851559 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:54:08.854445 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:54:08.866045 [info ]: Finished parsing [  0.05s]
+10:54:08.866653 [info ]: Cached model count updated: 7 models (estimate)
+10:54:08.866667 [info ]: Cached model count updated: 7 models (accurate)
+10:54:08.866703 [info ]: Started scheduling
+10:54:08.866798 [info ]: Finished scheduling [  0.00s]
+10:54:08.984547 [info ]: Started building task graph
+10:54:08.984710 [info ]: Finished building task graph [  0.00s]
+10:54:09.019207 [info ]: Started loading project
+10:54:09.023447 [info ]: Started loading project
+10:54:09.024044 [info ]: Finished loading project [  0.00s]
+10:54:09.178058 [info ]: Started parsing
+10:54:09.204960 [info ]: Finished loading project [  0.18s]
+10:54:09.211690 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:54:09.213354 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:54:09.224472 [info ]: Finished parsing [  0.05s]
+10:54:09.225149 [info ]: Cached model count updated: 7 models (estimate)
+10:54:09.225167 [info ]: Cached model count updated: 7 models (accurate)
+10:54:09.225196 [info ]: Started scheduling
+10:54:09.225273 [info ]: Finished scheduling [  0.00s]
+10:54:09.343191 [info ]: Started building task graph
+10:54:09.343312 [info ]: Finished building task graph [  0.00s]
+10:54:09.372988 [info ]: Started loading project
+10:54:09.376425 [info ]: Started loading project
+10:54:09.376984 [info ]: Finished loading project [  0.00s]
+10:54:09.498027 [info ]: Started parsing
+10:54:09.525793 [info ]: Finished loading project [  0.15s]
+10:54:09.536628 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:54:09.538732 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:54:09.555906 [info ]: Finished parsing [  0.06s]
+10:54:09.558938 [info ]: Cached model count updated: 7 models (estimate)
+10:54:09.558968 [info ]: Cached model count updated: 7 models (accurate)
+10:54:09.559027 [info ]: Started scheduling
+10:54:09.559186 [info ]: Finished scheduling [  0.00s]
+10:54:09.778306 [info ]: Started building task graph
+10:54:09.778422 [info ]: Finished building task graph [  0.00s]
+10:54:09.778555 [info ]: Started rendering (7 nodes)
+10:54:09.778576 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+10:54:09.778593 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+10:54:09.778610 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:54:09.778617 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:54:09.778631 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+10:54:09.778638 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+10:54:09.778647 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+10:54:09.778651 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+10:54:09.783022 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:54:09.783086 [info ]: Started analyzing (7 nodes)
+10:54:09.783162 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+10:54:09.785632 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+10:54:09.785889 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:54:09.786504 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+10:54:09.786673 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:54:09.787001 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:54:09.787042 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:54:09.796274 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+10:54:09.796324 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:54:09.796356 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+10:54:09.796374 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+10:54:09.796708 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+10:54:09.796777 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:54:09.796875 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+10:54:09.796893 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+10:54:09.800162 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+10:54:09.800185 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:54:09.800205 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:54:09.800220 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+10:54:09.804723 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+10:54:09.804767 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:54:09.804817 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+10:54:09.804866 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:54:09.822747 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+10:54:09.822807 [debug]: Finished analyzing [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:54:09.862003 [info ]:  Succeeded [  0.08s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+10:54:09.862035 [debug]: Finished analyzing [  0.08s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:54:09.862057 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+10:54:09.862067 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+10:54:09.863751 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:54:09.863784 [info ]: Finished rendering [  0.09s] (7 nodes, 0 skipped, 0 errors)
+10:54:09.863817 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+10:54:09.871226 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.fct_orders (view)
+10:54:09.871273 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:54:09.871283 [info ]: Finished analyzing [  0.09s] (7 nodes, 0 skipped, 0 errors)
+10:54:09.873893 [info ]: Cached model count updated: 7 models (accurate)
+10:57:11.200186 [info ]: Started loading project
+10:57:11.208621 [info ]: Finished loading project [  0.01s]
+10:57:11.208658 [info ]: Cached model count updated: 7 models (accurate)
+10:57:20.947863 [info ]: Started loading project
+10:57:20.969901 [info ]: Started loading project
+10:57:20.970501 [info ]: Finished loading project [  0.02s]
+10:57:21.148942 [info ]: Started parsing
+10:57:21.177109 [info ]: Finished loading project [  0.21s]
+10:57:21.185693 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:57:21.188512 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:57:21.199450 [info ]: Finished parsing [  0.05s]
+10:57:21.200098 [info ]: Cached model count updated: 7 models (estimate)
+10:57:21.200114 [info ]: Cached model count updated: 7 models (accurate)
+10:57:21.200148 [info ]: Started scheduling
+10:57:21.200243 [info ]: Finished scheduling [  0.00s]
+10:57:21.323701 [info ]: Started building task graph
+10:57:21.323860 [info ]: Finished building task graph [  0.00s]
+10:57:21.356335 [info ]: Started loading project
+10:57:21.360862 [info ]: Started loading project
+10:57:21.361448 [info ]: Finished loading project [  0.01s]
+10:57:21.543430 [info ]: Started parsing
+10:57:21.573931 [info ]: Finished loading project [  0.21s]
+10:57:21.582486 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:57:21.585261 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:57:21.597389 [info ]: Finished parsing [  0.05s]
+10:57:21.598033 [info ]: Cached model count updated: 7 models (estimate)
+10:57:21.598053 [info ]: Cached model count updated: 7 models (accurate)
+10:57:21.598090 [info ]: Started scheduling
+10:57:21.598180 [info ]: Finished scheduling [  0.00s]
+10:57:21.738392 [info ]: Started building task graph
+10:57:21.738539 [info ]: Finished building task graph [  0.00s]
+10:57:21.769894 [info ]: Started loading project
+10:57:21.774651 [info ]: Started loading project
+10:57:21.775248 [info ]: Finished loading project [  0.01s]
+10:57:21.911925 [info ]: Started parsing
+10:57:21.942482 [info ]: Finished loading project [  0.17s]
+10:57:21.952662 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:57:21.954783 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:57:21.969258 [info ]: Finished parsing [  0.06s]
+10:57:21.970900 [info ]: Cached model count updated: 7 models (estimate)
+10:57:21.970931 [info ]: Cached model count updated: 7 models (accurate)
+10:57:21.970986 [info ]: Started scheduling
+10:57:21.971139 [info ]: Finished scheduling [  0.00s]
+10:57:22.139219 [info ]: Started building task graph
+10:57:22.139336 [info ]: Finished building task graph [  0.00s]
+10:57:22.139467 [info ]: Started rendering (7 nodes)
+10:57:22.139487 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+10:57:22.139501 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+10:57:22.139520 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:57:22.139528 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:57:22.139542 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+10:57:22.139551 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+10:57:22.139559 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+10:57:22.139565 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+10:57:22.142781 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:57:22.142841 [info ]: Started analyzing (7 nodes)
+10:57:22.142862 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+10:57:22.143172 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:57:22.143249 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+10:57:22.143740 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+10:57:22.143805 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:57:22.144313 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:57:22.144310 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:57:22.151781 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+10:57:22.151819 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:57:22.154425 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+10:57:22.154474 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:57:22.154507 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+10:57:22.154527 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+10:57:22.156289 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+10:57:22.156343 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:57:22.156383 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+10:57:22.156402 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+10:57:22.157190 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:57:22.157245 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+10:57:22.159592 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:57:22.159647 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+10:57:22.165622 [info ]:  Succeeded [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+10:57:22.165659 [debug]: Finished analyzing [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:57:22.165684 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+10:57:22.165697 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+10:57:22.166796 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+10:57:22.166834 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.dim_product [success]
+10:57:22.166943 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.fct_orders (view)
+10:57:22.166972 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:57:22.169878 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:57:22.169917 [info ]: Finished rendering [  0.03s] (7 nodes, 0 skipped, 0 errors)
+10:57:22.169957 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+10:57:22.172470 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+10:57:22.172509 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:57:22.172517 [info ]: Finished analyzing [  0.03s] (7 nodes, 0 skipped, 0 errors)
+10:57:22.174725 [info ]: Cached model count updated: 7 models (accurate)
+10:57:30.368534 [info ]: Started loading project
+10:57:30.389122 [info ]: Started loading project
+10:57:30.389666 [info ]: Finished loading project [  0.02s]
+10:57:30.535840 [info ]: Started parsing
+10:57:30.561317 [info ]: Finished loading project [  0.17s]
+10:57:30.572626 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:57:30.576055 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:57:30.592890 [info ]: Finished parsing [  0.06s]
+10:57:30.593701 [info ]: Cached model count updated: 7 models (estimate)
+10:57:30.593722 [info ]: Cached model count updated: 7 models (accurate)
+10:57:30.593761 [info ]: Started scheduling
+10:57:30.593849 [info ]: Finished scheduling [  0.00s]
+10:57:30.838380 [info ]: Started building task graph
+10:57:30.838508 [info ]: Finished building task graph [  0.00s]
+10:57:30.861425 [info ]: Started loading project
+10:57:30.868533 [info ]: Started loading project
+10:57:30.869345 [info ]: Finished loading project [  0.01s]
+10:57:31.031630 [info ]: Finished loading project [  0.16s]
+10:57:31.045450 [info ]: Started loading project
+10:57:31.053429 [info ]: Started loading project
+10:57:31.054089 [info ]: Finished loading project [  0.01s]
+10:57:31.201487 [info ]: Started parsing
+10:57:31.231745 [info ]: Finished loading project [  0.18s]
+10:57:31.240770 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+10:57:31.242475 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+10:57:31.254687 [info ]: Finished parsing [  0.05s]
+10:57:31.255305 [info ]: Cached model count updated: 7 models (estimate)
+10:57:31.255319 [info ]: Cached model count updated: 7 models (accurate)
+10:57:31.255399 [info ]: Started scheduling
+10:57:31.255506 [info ]: Finished scheduling [  0.00s]
+10:57:31.404293 [info ]: Started building task graph
+10:57:31.404419 [info ]: Finished building task graph [  0.00s]
+10:57:31.404556 [info ]: Started rendering (7 nodes)
+10:57:31.404574 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+10:57:31.404584 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+10:57:31.404634 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:57:31.404642 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:57:31.404660 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+10:57:31.404665 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+10:57:31.404671 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+10:57:31.404677 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+10:57:31.408636 [info ]: Started analyzing (7 nodes)
+10:57:31.408674 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+10:57:31.408678 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:57:31.408706 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:57:31.408727 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+10:57:31.408748 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:57:31.408762 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+10:57:31.408777 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:57:31.408788 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+10:57:31.415946 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+10:57:31.415993 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+10:57:31.417375 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+10:57:31.417430 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+10:57:31.417492 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+10:57:31.417516 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+10:57:31.418255 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+10:57:31.418295 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+10:57:31.418324 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+10:57:31.418342 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+10:57:31.419832 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:57:31.419888 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+10:57:31.421259 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+10:57:31.421257 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:57:31.422883 [info ]:  Succeeded [  0.00s] model DBT_DEV_SCHEMA.dim_product (view)
+10:57:31.422921 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+10:57:31.431212 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.fct_orders (view)
+10:57:31.431270 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.fct_orders [success]
+10:57:31.448964 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+10:57:31.449021 [debug]: Finished analyzing [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+10:57:31.449058 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+10:57:31.449077 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+10:57:31.451616 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:57:31.451647 [info ]: Finished rendering [  0.05s] (7 nodes, 0 skipped, 0 errors)
+10:57:31.451676 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+10:57:31.453881 [info ]:  Succeeded [  0.00s] model DBT_DEV_SCHEMA.dim_customer (view)
+10:57:31.453917 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+10:57:31.453925 [info ]: Finished analyzing [  0.05s] (7 nodes, 0 skipped, 0 errors)
+10:57:31.455965 [info ]: Cached model count updated: 7 models (accurate)
+11:00:33.706609 [info ]: Started loading project
+11:00:33.715899 [info ]: Finished loading project [  0.01s]
+11:00:33.715921 [info ]: Cached model count updated: 7 models (accurate)
+11:01:19.113140 [info ]: Started loading project
+11:01:19.137455 [info ]: Started loading project
+11:01:19.138061 [info ]: Finished loading project [  0.02s]
+11:01:19.311124 [info ]: Started parsing
+11:01:19.336606 [info ]: Finished loading project [  0.20s]
+11:01:19.343621 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+11:01:19.345996 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+11:01:19.358845 [info ]: Finished parsing [  0.05s]
+11:01:19.359491 [info ]: Cached model count updated: 7 models (estimate)
+11:01:19.359505 [info ]: Cached model count updated: 7 models (accurate)
+11:01:19.359541 [info ]: Started scheduling
+11:01:19.359634 [info ]: Finished scheduling [  0.00s]
+11:01:19.478505 [info ]: Started building task graph
+11:01:19.478650 [info ]: Finished building task graph [  0.00s]
+11:01:19.520521 [info ]: Started loading project
+11:01:19.523684 [info ]: Started loading project
+11:01:19.524405 [info ]: Finished loading project [  0.00s]
+11:01:19.655310 [info ]: Started parsing
+11:01:19.678857 [info ]: Finished loading project [  0.16s]
+11:01:19.686608 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+11:01:19.688791 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+11:01:19.698543 [info ]: Finished parsing [  0.04s]
+11:01:19.699202 [info ]: Cached model count updated: 7 models (estimate)
+11:01:19.699218 [info ]: Cached model count updated: 7 models (accurate)
+11:01:19.699251 [info ]: Started scheduling
+11:01:19.699335 [info ]: Finished scheduling [  0.00s]
+11:01:19.817094 [info ]: Started building task graph
+11:01:19.817208 [info ]: Finished building task graph [  0.00s]
+11:01:19.827494 [info ]: Started loading project
+11:01:19.832333 [info ]: Started loading project
+11:01:19.833059 [info ]: Finished loading project [  0.01s]
+11:01:20.024035 [info ]: Started parsing
+11:01:20.051105 [info ]: Finished loading project [  0.22s]
+11:01:20.057940 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+11:01:20.059942 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+11:01:20.072517 [info ]: Finished parsing [  0.05s]
+11:01:20.073135 [info ]: Cached model count updated: 7 models (estimate)
+11:01:20.073151 [info ]: Cached model count updated: 7 models (accurate)
+11:01:20.073180 [info ]: Started scheduling
+11:01:20.073256 [info ]: Finished scheduling [  0.00s]
+11:01:20.264993 [info ]: Started building task graph
+11:01:20.265120 [info ]: Finished building task graph [  0.00s]
+11:01:20.265257 [info ]: Started rendering (7 nodes)
+11:01:20.265278 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:20.265294 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:20.265311 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:20.265315 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:20.265329 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:20.265334 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:20.265340 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:20.265345 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:20.268938 [info ]: Started analyzing (7 nodes)
+11:01:20.268969 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:20.268996 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+11:01:20.270383 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:20.271276 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+11:01:20.271508 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+11:01:20.271548 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:20.272235 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+11:01:20.272306 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:20.279620 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+11:01:20.279656 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+11:01:20.279679 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+11:01:20.279691 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+11:01:20.280441 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+11:01:20.280495 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+11:01:20.281821 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+11:01:20.281865 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+11:01:20.281898 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+11:01:20.281913 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+11:01:20.285004 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+11:01:20.285291 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.dim_customer [success]
+11:01:20.285550 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+11:01:20.285575 [debug]: Finished analyzing [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+11:01:20.285603 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+11:01:20.285621 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+11:01:20.286487 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+11:01:20.286668 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+11:01:20.290386 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+11:01:20.290479 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.dim_customer [success]
+11:01:20.292931 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.dim_product [success]
+11:01:20.292969 [info ]: Finished rendering [  0.03s] (7 nodes, 0 skipped, 0 errors)
+11:01:20.293005 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+11:01:20.297371 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_product (view)
+11:01:20.297457 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+11:01:20.300302 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.fct_orders (view)
+11:01:20.300358 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.fct_orders [success]
+11:01:20.300368 [info ]: Finished analyzing [  0.03s] (7 nodes, 0 skipped, 0 errors)
+11:01:20.303723 [info ]: Cached model count updated: 7 models (accurate)
+11:01:24.802603 [info ]: Started loading project
+11:01:24.825248 [info ]: Started loading project
+11:01:24.825882 [info ]: Finished loading project [  0.02s]
+11:01:24.960286 [info ]: Started parsing
+11:01:24.984730 [info ]: Finished loading project [  0.16s]
+11:01:24.991795 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+11:01:24.993770 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+11:01:25.006358 [info ]: Finished parsing [  0.05s]
+11:01:25.007021 [info ]: Cached model count updated: 7 models (estimate)
+11:01:25.007038 [info ]: Cached model count updated: 7 models (accurate)
+11:01:25.007067 [info ]: Started scheduling
+11:01:25.007146 [info ]: Finished scheduling [  0.00s]
+11:01:25.122961 [info ]: Started building task graph
+11:01:25.123088 [info ]: Finished building task graph [  0.00s]
+11:01:25.123215 [info ]: Started rendering (7 nodes)
+11:01:25.123232 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:25.123243 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:25.123259 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:25.123266 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:25.123278 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:25.123285 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:25.123293 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:25.123303 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:25.127266 [info ]: Started analyzing (7 nodes)
+11:01:25.127295 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:25.127357 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+11:01:25.128001 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:25.128418 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:25.129010 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:25.129506 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+11:01:25.129541 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+11:01:25.129555 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+11:01:25.135708 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+11:01:25.135756 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+11:01:25.137241 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [no-op]
+11:01:25.137301 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [no-op]
+11:01:25.137321 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:01:25.137334 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+11:01:25.137354 [info ]:  Succeeded [  0.00s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+11:01:25.137372 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+11:01:25.141029 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [no-op]
+11:01:25.141061 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:01:25.176734 [info ]: Started loading project
+11:01:25.180897 [info ]: Started loading project
+11:01:25.181544 [info ]: Finished loading project [  0.00s]
+11:01:25.307241 [info ]: Started parsing
+11:01:25.332310 [info ]: Finished loading project [  0.15s]
+11:01:25.340064 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+11:01:25.342137 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+11:01:25.355378 [info ]: Finished parsing [  0.05s]
+11:01:25.356176 [info ]: Cached model count updated: 7 models (estimate)
+11:01:25.356196 [info ]: Cached model count updated: 7 models (accurate)
+11:01:25.356232 [info ]: Started scheduling
+11:01:25.356321 [info ]: Finished scheduling [  0.00s]
+11:01:25.534805 [info ]: Started building task graph
+11:01:25.534949 [info ]: Finished building task graph [  0.00s]
+11:01:25.545732 [info ]: Started loading project
+11:01:25.549667 [info ]: Started loading project
+11:01:25.550516 [info ]: Finished loading project [  0.00s]
+11:01:25.714350 [info ]: Started parsing
+11:01:25.745108 [info ]: Finished loading project [  0.20s]
+11:01:25.757684 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:13:23
+11:01:25.759737 [error]: dbt0102: Deprecated test arguments: ["field", "to"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> tpch_sf1_data\models\marts\schema.yml:26:22
+11:01:25.782975 [info ]: Finished parsing [  0.07s]
+11:01:25.783705 [info ]: Cached model count updated: 7 models (estimate)
+11:01:25.783726 [info ]: Cached model count updated: 7 models (accurate)
+11:01:25.783765 [info ]: Started scheduling
+11:01:25.783881 [info ]: Finished scheduling [  0.00s]
+11:01:25.958674 [info ]: Started building task graph
+11:01:25.958820 [info ]: Finished building task graph [  0.00s]
+11:01:25.958958 [info ]: Started rendering (7 nodes)
+11:01:25.958976 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:25.958985 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:25.959001 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:25.959008 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:25.959021 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:25.959027 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:25.959034 [info ]: Started model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:25.959041 [debug]: Started rendering model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:25.963256 [info ]: Started analyzing (7 nodes)
+11:01:25.963299 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_parts
+11:01:25.963460 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_lineitems
+11:01:25.963528 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_customers
+11:01:25.965127 [debug]: Started analyzing model DBT_DEV_SCHEMA.stg_tpch_orders
+11:01:25.966155 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+11:01:25.966202 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+11:01:25.966222 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+11:01:25.966242 [debug]: Finished rendering [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+11:01:25.973717 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers (view)
+11:01:25.973761 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_customers [success]
+11:01:25.973791 [info ]: Started model DBT_DEV_SCHEMA.dim_customer
+11:01:25.973804 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_customer
+11:01:25.976501 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_customer
+11:01:25.976519 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_customer [success]
+11:01:25.977085 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.stg_tpch_lineitems (view)
+11:01:25.977117 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.stg_tpch_lineitems [success]
+11:01:25.981574 [info ]:  Succeeded [  0.01s] model DBT_DEV_SCHEMA.dim_customer (view)
+11:01:25.981625 [debug]: Finished analyzing [  0.01s] model DBT_DEV_SCHEMA.dim_customer [success]
+11:01:25.992197 [info ]:  Succeeded [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_parts (view)
+11:01:25.992236 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_parts [success]
+11:01:25.992260 [info ]: Started model DBT_DEV_SCHEMA.dim_product
+11:01:25.992272 [debug]: Started rendering model DBT_DEV_SCHEMA.dim_product
+11:01:25.994288 [debug]: Started analyzing model DBT_DEV_SCHEMA.dim_product
+11:01:25.994285 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+11:01:25.996736 [info ]:  Succeeded [  0.04s] model DBT_DEV_SCHEMA.stg_tpch_orders (view)
+11:01:25.996807 [debug]: Finished analyzing [  0.03s] model DBT_DEV_SCHEMA.stg_tpch_orders [success]
+11:01:25.996845 [info ]: Started model DBT_DEV_SCHEMA.fct_orders
+11:01:25.996873 [debug]: Started rendering model DBT_DEV_SCHEMA.fct_orders
+11:01:25.998245 [info ]:  Succeeded [  0.00s] model DBT_DEV_SCHEMA.dim_product (view)
+11:01:25.998295 [debug]: Finished analyzing [  0.00s] model DBT_DEV_SCHEMA.dim_product [success]
+11:01:25.998941 [debug]: Finished rendering [  0.00s] model DBT_DEV_SCHEMA.fct_orders [success]
+11:01:25.998947 [debug]: Started analyzing model DBT_DEV_SCHEMA.fct_orders
+11:01:25.998971 [info ]: Finished rendering [  0.04s] (7 nodes, 0 skipped, 0 errors)
+11:01:26.018937 [info ]:  Succeeded [  0.02s] model DBT_DEV_SCHEMA.fct_orders (view)
+11:01:26.018980 [debug]: Finished analyzing [  0.02s] model DBT_DEV_SCHEMA.fct_orders [success]
+11:01:26.018990 [info ]: Finished analyzing [  0.06s] (7 nodes, 0 skipped, 0 errors)
+11:01:26.021486 [info ]: Cached model count updated: 7 models (accurate)
+11:04:34.230589 [info ]: Started loading project
+11:04:34.245695 [info ]: Finished loading project [  0.02s]
+11:04:34.245730 [info ]: Cached model count updated: 7 models (accurate)

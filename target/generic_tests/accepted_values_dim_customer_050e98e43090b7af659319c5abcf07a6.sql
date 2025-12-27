@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="market_segment", model=get_where_subquery(ref('dim_customer')), values=["Automobile","Building","Furniture","Household","Machinery"]) }}

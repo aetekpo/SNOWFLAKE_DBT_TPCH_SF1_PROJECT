@@ -1,13 +1,12 @@
-name: dbt CI (Test Only)
+name: dbt CD (Deploy)
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
-  test:
+  deploy-dev:
     runs-on: ubuntu-latest
+    environment: dev  # Requires approval!
     steps:
     - uses: actions/checkout@v4
     
@@ -19,7 +18,7 @@ jobs:
     - name: Install dbt-snowflake
       run: pip install dbt-snowflake==1.10.5
     
-    - name: dbt deps
+    - name: dbt run
       env:
         SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
@@ -30,15 +29,4 @@ jobs:
         SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
       run: |
         echo "profiles_ci.yml" > profiles.yml
-        dbt deps --profiles-dir . --target dev
-    
-    - name: dbt test
-      env:
-        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
-        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
-        SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
-        SNOWFLAKE_ROLE_DEV: ${{ secrets.SNOWFLAKE_ROLE_DEV }}
-        SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
-        SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
-        SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
-      run: dbt test --profiles-dir . --target dev
+        dbt run --profiles-dir . --target dev
