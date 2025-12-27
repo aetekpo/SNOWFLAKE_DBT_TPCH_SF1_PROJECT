@@ -1,12 +1,12 @@
-name: dbt CD (Deploy)
+name: dbt CD (Deploy Dev)
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest
-    environment: dev  # Requires approval!
+    environment: dev  # Optional: requires manual approval
     steps:
     - uses: actions/checkout@v4
     
@@ -18,8 +18,9 @@ jobs:
     - name: Install dbt-snowflake
       run: pip install dbt-snowflake==1.10.5
     
-    - name: dbt run
+    - name: dbt deps
       env:
+        DBT_PROFILES_DIR: .
         SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
         SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
@@ -27,6 +28,28 @@ jobs:
         SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
         SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
         SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
-      run: |
-        echo "profiles_ci.yml" > profiles.yml
-        dbt run --profiles-dir . --target dev
+      run: dbt deps --target dev
+    
+    - name: dbt run
+      env:
+        DBT_PROFILES_DIR: .
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+        SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
+        SNOWFLAKE_ROLE_DEV: ${{ secrets.SNOWFLAKE_ROLE_DEV }}
+        SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
+        SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
+        SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
+      run: dbt run --target dev
+    
+    - name: dbt test
+      env:
+        DBT_PROFILES_DIR: .
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+        SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
+        SNOWFLAKE_ROLE_DEV: ${{ secrets.SNOWFLAKE_ROLE_DEV }}
+        SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
+        SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
+        SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
+      run: dbt test --target dev
