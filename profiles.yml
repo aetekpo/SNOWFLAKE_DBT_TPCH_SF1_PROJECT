@@ -3,21 +3,24 @@ tpch_sf1_data:
   outputs:
     dev:
       type: snowflake
-      account: "rcndmfs-ni75341"
-      user: "DBT_SERVICE_USER"
-      role: "DBT_DEV_ROLE"
-      database: "TPCH_DEV_DB" 
-      warehouse: "COMPUTE_WH"
-      schema: "DBT_DEV_SCHEMA" 
-      authenticator:
-      private_key_path: "C:\\Users\\honor\\.snowflake_key.pem"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'rcndmfs-ni75341') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'DBT_SERVICE_USER') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE_DEV', 'DBT_DEV_ROLE') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE_DEV', 'TPCH_DEV_DB') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE_DEV', 'COMPUTE_WH') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA_DEV', 'DBT_DEV_SCHEMA') }}"
+      private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PASSPHRASE', '') }}"  # optional
+      authenticator: snowflake
+
     prod:
       type: snowflake
-      account: "rcndmfs-ni75341"
-      user: "DBT_SERVICE_USER"
-      role: "DBT_DEV_ROLE"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'rcndmfs-ni75341') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'DBT_SERVICE_USER') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE_DEV', 'DBT_DEV_ROLE') }}"
       database: "TPCH_PROD_DB"
       warehouse: "COMPUTE_WH"
       schema: "TPCH_PROD_SCHEMA"
-      authenticator:
-      private_key_path: "C:\\Users\\honor\\.snowflake_key.pem"
+      private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PASSPHRASE', '') }}"  # optional
+      authenticator: snowflake
