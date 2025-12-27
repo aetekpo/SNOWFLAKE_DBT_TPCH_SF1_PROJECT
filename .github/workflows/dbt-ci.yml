@@ -1,7 +1,7 @@
 name: dbt CI (Test Only)
 on:
   push:
-    branches: [ master ]
+    branches: [ master ]   # <-- change to 'master' since that’s your default branch
   pull_request:
     branches: [ master ]
 
@@ -18,9 +18,10 @@ jobs:
     
     - name: Install dbt-snowflake
       run: pip install dbt-snowflake==1.10.5
-    
+
     - name: dbt deps
       env:
+        DBT_PROFILES_DIR: .                # <-- add this
         SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
         SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
@@ -28,12 +29,11 @@ jobs:
         SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
         SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
         SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
-      run: |
-        echo "profiles_ci.yml" > profiles.yml
-        dbt deps --profiles-dir . --target dev
+      run: dbt deps --target dev
     
     - name: dbt test
       env:
+        DBT_PROFILES_DIR: .                # <-- add this too
         SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
         SNOWFLAKE_PRIVATE_KEY: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
@@ -41,4 +41,4 @@ jobs:
         SNOWFLAKE_DATABASE_DEV: ${{ secrets.SNOWFLAKE_DATABASE_DEV }}
         SNOWFLAKE_WAREHOUSE_DEV: ${{ secrets.SNOWFLAKE_WAREHOUSE_DEV }}
         SNOWFLAKE_SCHEMA_DEV: ${{ secrets.SNOWFLAKE_SCHEMA_DEV }}
-      run: dbt test --profiles-dir . --target dev
+      run: dbt test --target dev
