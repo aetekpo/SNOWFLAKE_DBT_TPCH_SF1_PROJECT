@@ -10,17 +10,15 @@ tpch_sf1_data:
       warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE_DEV', 'COMPUTE_WH') }}"
       schema: "{{ env_var('SNOWFLAKE_SCHEMA_DEV', 'DBT_DEV_SCHEMA') }}"
       private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
-      private_key_passphrase: "{{ env_var('SNOWFLAKE_PASSPHRASE', '') }}"  # optional
       authenticator: snowflake
 
-    prod:
+    prod:  # ← NEW
       type: snowflake
       account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'rcndmfs-ni75341') }}"
       user: "{{ env_var('SNOWFLAKE_USER', 'DBT_SERVICE_USER') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE_DEV', 'DBT_DEV_ROLE') }}"
-      database: "TPCH_PROD_DB"
-      warehouse: "COMPUTE_WH"
-      schema: "TPCH_PROD_SCHEMA"
+      database: "{{ env_var('SNOWFLAKE_DATABASE_PROD', 'TPCH_PROD_DB') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE_DEV', 'COMPUTE_WH') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA_PROD', 'TPCH_PROD_SCHEMA') }}"
       private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
-      private_key_passphrase: "{{ env_var('SNOWFLAKE_PASSPHRASE', '') }}"  # optional
       authenticator: snowflake
